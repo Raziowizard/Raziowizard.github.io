@@ -1,0 +1,2168 @@
+<!doctype html>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S3EEERWGNJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S3EEERWGNJ');
+</script>
+
+<html data-om-id="d44bb400:om-html-1" data-src-ver="d44bb400" lang="en" data-theme="dark">
+<head data-om-id="d44bb400:om-head-1">
+<meta charset="utf-8" data-om-id="d44bb400:om-meta-1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" data-om-id="d44bb400:om-meta-2"/>
+<title data-om-id="d44bb400:om-title-1" data-om-text-id="txt:index.html:160:194">Yoshio Faris Makarim — Portfolio</title>
+<meta name="description" content="Portfolio of Yoshio Faris Makarim — Nanotechnology Engineer, QA & Data Analyst based in Tangerang, Indonesia." data-om-id="d44bb400:om-meta-3"/>
+
+<link rel="icon" type="image/png" href="Assets/favicon.png" data-om-id="d44bb400:om-link-1"/>
+<link data-om-id="d44bb400:om-link-2" rel="preconnect" href="https://fonts.googleapis.com">
+<link data-om-id="d44bb400:om-link-3" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link data-om-id="d44bb400:om-link-4" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+<!-- Inline theme setter (prevents flash) -->
+<script data-om-id="d44bb400:om-script-1" data-om-text-id="txt:index.html:786:1187">
+  (function(){
+    try {
+      var saved = localStorage.getItem('yfm-theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch(e){}
+  })();
+</script>
+
+<style data-om-id="d44bb400:om-style-1" data-om-text-id="txt:index.html:1205:52323">
+  /* ==================== THEME TOKENS ==================== */
+  :root, [data-theme="dark"]{
+    --bg:#0d1512;
+    --bg-2:#131e19;
+    --bg-3:#1a2721;
+    --panel:#16221c;
+    --panel-2:#1a2721;
+    --ink:#e8ecd8;
+    --ink-dim:#a8b39a;
+    --ink-mute:#6b7862;
+    --sage:#7fb069;
+    --sage-2:#a3c98a;
+    --accent:#e8d16c;
+    --line:rgba(232,236,216,.10);
+    --line-2:rgba(232,236,216,.18);
+    --nav-bg:rgba(19,30,25,.72);
+    --nav-border:rgba(232,236,216,.10);
+    --scan-op:.5;
+    --scan-color:rgba(0,0,0,.04);
+    --glow-1:rgba(127,176,105,.08);
+    --glow-2:rgba(232,209,108,.05);
+    --shadow-hover:0 10px 30px rgba(0,0,0,.35);
+  }
+  [data-theme="light"]{
+    --bg:#f4f1e6;
+    --bg-2:#eee9d8;
+    --bg-3:#e5dfca;
+    --panel:#faf7ec;
+    --panel-2:#f2ede0;
+    --ink:#1f3020;
+    --ink-dim:#3f5a3a;
+    --ink-mute:#7c8a70;
+    --sage:#3d6b3a;
+    --sage-2:#5a8a4c;
+    --accent:#a8801a;
+    --line:rgba(31,48,32,.10);
+    --line-2:rgba(31,48,32,.18);
+    --nav-bg:rgba(250,247,236,.78);
+    --nav-border:rgba(31,48,32,.10);
+    --scan-op:.35;
+    --scan-color:rgba(31,48,32,.025);
+    --glow-1:rgba(90,138,76,.08);
+    --glow-2:rgba(168,128,26,.05);
+    --shadow-hover:0 10px 30px rgba(31,48,32,.10);
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  html,body{
+    background:var(--bg);color:var(--ink);
+    font-family:'JetBrains Mono',ui-monospace,monospace;font-size:14px;line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    transition: background-color .5s ease, color .35s ease;
+  }
+  body{
+    background:
+      radial-gradient(circle at 12% 8%, var(--glow-1) 0%, transparent 40%),
+      radial-gradient(circle at 88% 60%, var(--glow-2) 0%, transparent 50%),
+      var(--bg);
+    min-height:100vh;position:relative;overflow-x:hidden;
+    transition: background .5s ease, color .35s ease;
+  }
+  /* Scan lines effect */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
+    background:repeating-linear-gradient(to bottom, transparent 0, transparent 3px, var(--scan-color) 3px, var(--scan-color) 4px);
+    opacity:var(--scan-op);transition:opacity .4s ease;
+  }
+  a{color:var(--sage);text-decoration:none;transition:color .2s ease}
+  a:hover{color:var(--sage-2)}
+  .serif{font-family:'Fraunces',Georgia,serif;font-weight:400}
+
+  /* ==================== STICKY NAV ==================== */
+  .navbar{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:var(--nav-bg);
+    backdrop-filter:blur(14px) saturate(140%);
+    -webkit-backdrop-filter:blur(14px) saturate(140%);
+    border-bottom:1px solid var(--nav-border);
+    transition:background .4s ease, border-color .3s ease, transform .4s ease;
+  }
+  .nav-inner{
+    max-width:1300px;margin:0 auto;padding:12px 32px 12px 100px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .nav-brand{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--sage);text-transform:uppercase;white-space:nowrap}
+  .nav-brand .b-dot{width:8px;height:8px;background:var(--sage);border-radius:50%;box-shadow:0 0 10px var(--sage);animation:pulse 2s infinite}
+  .nav-brand b{color:var(--ink);letter-spacing:.14em}
+  .nav-links{display:flex;gap:2px;align-items:center;flex-wrap:wrap}
+  .nav-links a{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-dim);padding:8px 12px;position:relative;transition:color .2s ease;
+  }
+  .nav-links a::after{
+    content:"";position:absolute;left:12px;right:12px;bottom:4px;height:1px;background:var(--sage);
+    transform:scaleX(0);transform-origin:left;transition:transform .3s ease;
+  }
+  .nav-links a:hover{color:var(--sage-2)}
+  .nav-links a:hover::after{transform:scaleX(1)}
+  .nav-links a.active{color:var(--sage-2)}
+  .nav-links a.active::after{transform:scaleX(1)}
+
+  .nav-right{display:flex;align-items:center;gap:12px}
+  /* Theme toggle */
+  .theme-toggle{
+    position:relative;width:56px;height:28px;border-radius:999px;
+    background:var(--panel);border:1px solid var(--line-2);cursor:pointer;
+    display:flex;align-items:center;padding:0 4px;transition:all .3s ease;
+  }
+  .theme-toggle:hover{border-color:var(--sage)}
+  .theme-toggle .knob{
+    width:20px;height:20px;border-radius:50%;
+    background:var(--sage);box-shadow:0 0 8px rgba(127,176,105,.4);
+    transition:transform .3s cubic-bezier(.4,0,.2,1), background .3s ease;
+    display:flex;align-items:center;justify-content:center;color:var(--bg);
+  }
+  [data-theme="light"] .theme-toggle .knob{transform:translateX(28px);background:var(--accent);box-shadow:0 0 8px rgba(168,128,26,.35)}
+  .theme-toggle .ico{font-size:11px;line-height:1;pointer-events:none}
+  .theme-toggle .ico-sun{display:none}
+  .theme-toggle .ico-moon{display:inline}
+  [data-theme="light"] .theme-toggle .ico-sun{display:inline}
+  [data-theme="light"] .theme-toggle .ico-moon{display:none}
+
+  /* Mobile menu button */
+  .nav-burger{
+    display:none;width:36px;height:36px;background:transparent;border:1px solid var(--line-2);
+    align-items:center;justify-content:center;cursor:pointer;color:var(--ink);border-radius:4px;
+  }
+  .nav-burger span{width:16px;height:1.5px;background:var(--ink);position:relative;display:block}
+  .nav-burger span::before,.nav-burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--ink)}
+  .nav-burger span::before{top:-5px}
+  .nav-burger span::after{top:5px}
+
+  /* ==================== LEFT RAIL ==================== */
+  .rail{
+    position:fixed;left:24px;top:80px;bottom:24px;width:56px;
+    display:flex;flex-direction:column;justify-content:space-between;align-items:center;
+    z-index:10;pointer-events:none;
+  }
+  .rail .brand{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.24em;color:var(--sage);writing-mode:vertical-rl;transform:rotate(180deg)}
+  .rail .status{writing-mode:vertical-rl;transform:rotate(180deg);font-size:9px;letter-spacing:.18em;color:var(--ink-mute)}
+  .rail .status .dot{display:inline-block;width:6px;height:6px;background:var(--sage);border-radius:50%;margin-right:6px;box-shadow:0 0 8px var(--sage);animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+  /* ==================== CONTAINER ==================== */
+  .container{max-width:1200px;margin:0 auto;padding:96px 40px 60px 100px;position:relative;z-index:2}
+
+  /* Top bar (kept from original) */
+  .topbar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:14px 20px;border:1px solid var(--line-2);background:var(--panel);backdrop-filter:blur(8px);margin-bottom:32px}
+  .topbar .cell{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)}
+  .topbar .cell.center{color:var(--sage);text-align:center}
+  .topbar .cell.right{text-align:right}
+  .topbar .cell b{color:var(--ink)}
+
+  /* ==================== HEADER (Profile) ==================== */
+  header#profile{
+    display:grid;grid-template-columns:1.15fr 0.85fr;gap:32px;
+    padding:32px 0 44px;border-bottom:1px solid var(--line);position:relative;
+    scroll-margin-top:80px;
+  }
+  .id-block{position:relative}
+  .kicker{font-size:10.5px;letter-spacing:.28em;color:var(--sage);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+  .kicker::before{content:"";width:32px;height:1px;background:var(--sage)}
+  .name{font-family:'Fraunces',serif;font-weight:400;font-size:88px;line-height:.95;letter-spacing:-.03em;color:var(--ink);margin-bottom:6px}
+  .name .last{font-style:italic;color:var(--sage-2)}
+  .role{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:28px}
+  .role .sep{color:var(--sage);margin:0 10px}
+
+  .id-fields{display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid var(--line);background:var(--line)}
+  .id-fields > div{padding:12px 14px;background:var(--panel);transition:background .2s ease}
+  .id-fields > div:hover{background:var(--panel-2)}
+  .id-fields .k{font-size:9.5px;letter-spacing:.2em;color:var(--ink-mute);text-transform:uppercase;margin-bottom:4px}
+  .id-fields .v{font-size:13px;color:var(--ink);word-break:break-all;line-height:1.4}
+  .id-fields .v a{color:var(--ink)}
+  .id-fields .v a:hover{color:var(--sage-2)}
+
+  .actions{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    background:var(--sage);color:var(--bg);border:1px solid var(--sage);cursor:pointer;transition:.2s;text-decoration:none;
+  }
+  .btn:hover{background:var(--sage-2);border-color:var(--sage-2);color:var(--bg);transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+  .btn.ghost:hover{background:var(--panel);color:var(--sage-2);border-color:var(--sage)}
+
+  /* Right col */
+  .hero-right{display:flex;flex-direction:column;gap:16px;position:relative}
+  .instrument{border:1px solid var(--line-2);background:var(--panel);padding:14px;position:relative;overflow:hidden}
+  .instrument-label{position:absolute;top:8px;left:14px;font-size:9px;letter-spacing:.24em;color:var(--sage);text-transform:uppercase;z-index:2}
+  .instrument-label .l-dot{display:inline-block;width:5px;height:5px;background:var(--sage);border-radius:50%;margin-right:6px;vertical-align:middle;box-shadow:0 0 6px var(--sage)}
+  .avatar{aspect-ratio:1/1;background:var(--bg-3);border:1px solid var(--line);position:relative;overflow:hidden}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .avatar::after{
+    content:"";position:absolute;inset:0;background:
+      linear-gradient(to right, transparent 0, rgba(127,176,105,.08) 50%, transparent 100%);
+    animation:scan 4s linear infinite;pointer-events:none;
+  }
+  @keyframes scan{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+  .orbit-panel{aspect-ratio:1/1;position:relative;background:var(--bg-2);border:1px solid var(--line);overflow:hidden}
+  .orbit-panel svg{position:absolute;inset:0;width:100%;height:100%}
+  .orbit .ring{fill:none;stroke:var(--sage);stroke-width:.5;opacity:.5}
+  .orbit .core{fill:var(--sage)}
+  .orbit .electron{fill:var(--accent)}
+  .orbit .label{fill:var(--ink-dim);font-family:'JetBrains Mono',monospace;font-size:4px;letter-spacing:.3em}
+  .orbit-anim-1{transform-origin:center;animation:rot 12s linear infinite}
+  .orbit-anim-2{transform-origin:center;animation:rot 20s linear infinite reverse}
+  .orbit-anim-3{transform-origin:center;animation:rot 8s linear infinite}
+  @keyframes rot{to{transform:rotate(360deg)}}
+
+  .readout{border:1px solid var(--line-2);background:var(--panel);padding:14px}
+  .readout .r-title{font-size:9.5px;letter-spacing:.2em;color:var(--sage);text-transform:uppercase;margin-bottom:10px;display:flex;justify-content:space-between}
+  .readout .r-row{display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-bottom:1px dashed var(--line)}
+  .readout .r-row:last-child{border-bottom:none}
+  .readout .r-row .r-k{color:var(--ink-dim)}
+  .readout .r-row .r-v{color:var(--ink)}
+  .readout .r-row .r-v .accent{color:var(--accent)}
+
+  /* Summary panel */
+  .summary{
+    margin-top:32px;padding:28px 32px;border:1px solid var(--line-2);
+    background:linear-gradient(135deg, var(--glow-1), transparent);
+    position:relative;
+  }
+  .summary .quote{font-family:'Fraunces',serif;font-size:20px;line-height:1.55;color:var(--ink);text-wrap:pretty;font-weight:400}
+  .summary .quote::before{content:"“";position:absolute;top:-14px;left:22px;background:var(--bg);padding:0 10px;font-family:'Fraunces',serif;font-size:44px;color:var(--sage);line-height:1}
+
+  /* ==================== SECTIONS ==================== */
+  section{padding:48px 0;border-top:1px solid var(--line);position:relative;scroll-margin-top:80px}
+  .sec-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;padding-bottom:12px;border-bottom:1px dashed var(--line);gap:16px;flex-wrap:wrap}
+  .sec-num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--sage);text-transform:uppercase}
+  .sec-title{font-family:'Fraunces',serif;font-size:32px;font-weight:400;color:var(--ink);letter-spacing:-.01em}
+  .sec-title .em{font-style:italic;color:var(--sage-2)}
+  .sec-meta{font-size:10.5px;letter-spacing:.16em;color:var(--ink-mute);text-transform:uppercase}
+
+  /* Featured */
+  .featured{
+    border:1px solid var(--sage);background:linear-gradient(180deg, var(--glow-1), transparent);
+    padding:26px 28px;margin-bottom:20px;position:relative;transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .featured:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+  .featured::before{
+    content:"KEY INTERNSHIP";position:absolute;top:-9px;left:20px;
+    background:var(--bg);padding:0 10px;font-size:9.5px;letter-spacing:.22em;color:var(--sage);
+  }
+  .featured::after{
+    content:"● HIGHLIGHT";position:absolute;top:-9px;right:20px;
+    background:var(--bg);padding:0 10px;font-size:9.5px;letter-spacing:.22em;color:var(--accent);
+  }
+  .entry{padding:20px 0;border-bottom:1px dashed var(--line)}
+  .entry:last-child{border-bottom:none}
+  /* Balanced 2-column entry head — left stack (org+loc+role), right stack (logo+date) */
+  .entry-head{
+    display:grid;grid-template-columns:1fr auto;gap:16px 24px;
+    align-items:start;margin-bottom:8px;
+  }
+  .entry-head .entry-left{
+    display:flex;flex-direction:column;gap:5px;min-width:0;
+  }
+  .entry-org{font-family:'Fraunces',serif;font-size:22px;color:var(--ink);font-weight:500;letter-spacing:-.005em;line-height:1.15;margin:0}
+  .entry-org.big{font-size:26px}
+  .entry-date{font-size:11px;letter-spacing:.14em;color:var(--ink-mute);text-transform:uppercase;white-space:nowrap;padding:0;margin:0}
+  .entry-head .entry-role{font-family:'Fraunces',serif;font-style:italic;font-size:15px;color:var(--sage-2);margin:0;line-height:1.35}
+  .entry-role{font-family:'Fraunces',serif;font-style:italic;font-size:15px;color:var(--sage-2);margin-bottom:8px}
+  .entry-head .entry-loc{margin:0}
+  .entry-loc{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:2px 0 8px;display:flex;align-items:center;gap:6px}
+  .entry-loc .loc-pin{color:var(--sage);font-size:10px;line-height:1}
+  /* Leadership date inline with left column, sits under role */
+  .entry-head .entry-left .entry-date{color:var(--ink-mute);margin-top:2px}
+  /* Tighten the entry body against its header */
+  .featured .entry-body, .entry .entry-body{margin-top:4px}
+  .entry-body{font-size:13.5px;line-height:1.7;color:var(--ink-dim);font-family:'JetBrains Mono',monospace;text-wrap:pretty}
+  .entry-body ul{list-style:none;padding:0}
+  .entry-body li{padding-left:22px;position:relative;margin-bottom:8px;font-size:13px}
+  .entry-body li::before{content:"▸";position:absolute;left:0;color:var(--sage);font-family:'JetBrains Mono',monospace}
+  .entry-body b{color:var(--ink);font-weight:500}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+
+  /* Research card lift */
+  .research-card{border:1px solid var(--line-2);padding:24px;background:var(--panel);transition:border-color .3s ease, transform .3s ease, box-shadow .3s ease;position:relative;overflow:hidden}
+  /* Four glowing edge lines — top, right, bottom, left */
+  .research-card::before,
+  .research-card::after,
+  .research-card > .r-edge-l,
+  .research-card > .r-edge-r{
+    content:"";position:absolute;background:var(--sage);
+    box-shadow:0 0 10px var(--sage);pointer-events:none;
+    transition:transform .45s cubic-bezier(.4,0,.2,1);
+  }
+  .research-card::before{top:0;left:0;right:0;height:2px;transform:scaleX(0);transform-origin:left}
+  .research-card::after{bottom:0;left:0;right:0;height:2px;transform:scaleX(0);transform-origin:right}
+  .research-card > .r-edge-l{top:0;bottom:0;left:0;width:2px;transform:scaleY(0);transform-origin:bottom}
+  .research-card > .r-edge-r{top:0;bottom:0;right:0;width:2px;transform:scaleY(0);transform-origin:top}
+  .research-card:hover{border-color:var(--sage);transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+  .research-card:hover::before,
+  .research-card:hover::after{transform:scaleX(1)}
+  .research-card:hover > .r-edge-l,
+  .research-card:hover > .r-edge-r{transform:scaleY(1)}
+
+  /* ==================== EDUCATION TIMELINE ==================== */
+  .edu-timeline{position:relative;padding-left:30px}
+  .edu-timeline::before{
+    content:"";position:absolute;left:8px;top:8px;bottom:8px;width:1px;
+    background:linear-gradient(to bottom, var(--sage) 0%, var(--line-2) 100%);
+  }
+  .edu-item{position:relative;padding:18px 0 22px 20px;border-bottom:1px dashed var(--line);transition:.25s}
+  .edu-item:last-child{border-bottom:none}
+  .edu-item::before{
+    content:"";position:absolute;left:-27px;top:24px;width:11px;height:11px;
+    border-radius:50%;background:var(--bg);border:2px solid var(--sage);transition:.25s;
+  }
+  .edu-item:hover::before{background:var(--sage);box-shadow:0 0 12px var(--sage)}
+  .edu-item:hover{padding-left:26px}
+  .edu-item .e-tier{
+    display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.22em;
+    color:var(--accent);text-transform:uppercase;margin-bottom:6px;
+    padding:2px 8px;border:1px solid var(--line-2);background:var(--panel);
+  }
+  /* Education head — balanced 2-column grid; right column pulled up to align with e-tier */
+  .edu-item .e-head{
+    display:grid;grid-template-columns:1fr auto;gap:12px 24px;
+    align-items:start;margin-bottom:4px;position:relative;
+  }
+  .edu-item .e-head .edu-left{
+    display:flex;flex-direction:column;gap:4px;min-width:0;
+  }
+  .edu-item .e-inst{font-family:'Fraunces',serif;font-size:20px;color:var(--ink);font-weight:500;letter-spacing:-.005em;line-height:1.15;margin:0}
+  .edu-item .e-date{font-size:11px;letter-spacing:.14em;color:var(--ink-mute);text-transform:uppercase;white-space:nowrap;padding:0;margin:0}
+  .edu-item .e-head .e-loc{margin:0}
+  .edu-item .e-head .e-desc{margin:0;line-height:1.4}
+  .edu-item .e-desc{font-family:'Fraunces',serif;font-style:italic;font-size:14.5px;color:var(--sage-2);margin-bottom:6px;line-height:1.5}
+  /* Pull edu-right up so top of logo aligns with the e-tier badge above the e-head */
+  .edu-item .edu-right{margin-top:-34px}
+  .edu-item .e-sub{margin-top:6px;padding-top:6px}
+  .edu-item .e-extra{font-size:12.5px;color:var(--ink-dim);line-height:1.6;font-family:'JetBrains Mono',monospace;margin-top:4px}
+  .edu-item .e-loc{
+    display:inline-flex;align-items:center;gap:6px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 6px;
+  }
+  .edu-item .e-loc .loc-pin{color:var(--sage);font-size:9px;line-height:1}
+  .edu-item .e-sub{
+    display:block;font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:1.5;
+    color:var(--ink-mute);margin-top:8px;padding-top:8px;border-top:1px dotted var(--line);
+    letter-spacing:.02em;text-wrap:pretty;
+  }
+  .edu-item .e-sub::before{content:"\002B \00A0";color:var(--sage);font-weight:500}
+
+  /* ==================== PROJECTS SLIDER ==================== */
+  .projects-wrap{position:relative}
+  .projects-controls{
+    position:absolute;top:-52px;right:0;display:flex;gap:6px;align-items:center;
+  }
+  .proj-arrow{
+    width:36px;height:36px;background:var(--panel);border:1px solid var(--line-2);color:var(--ink);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;font-size:16px;
+  }
+  .proj-arrow:hover{background:var(--sage);color:var(--bg);border-color:var(--sage)}
+  .proj-arrow:disabled{opacity:.3;cursor:not-allowed}
+  .proj-arrow:disabled:hover{background:var(--panel);color:var(--ink);border-color:var(--line-2)}
+
+  .projects-scroll{
+    display:flex;gap:20px;overflow-x:auto;padding:8px 4px 24px;
+    scroll-snap-type:x mandatory;scroll-behavior:smooth;
+    scrollbar-width:thin;scrollbar-color:var(--sage) transparent;
+    -webkit-overflow-scrolling:touch;
+  }
+  .projects-scroll::-webkit-scrollbar{height:6px}
+  .projects-scroll::-webkit-scrollbar-track{background:var(--line)}
+  .projects-scroll::-webkit-scrollbar-thumb{background:var(--sage);border-radius:3px}
+
+  .proj-card{
+    flex:0 0 340px;scroll-snap-align:start;
+    border:1px solid var(--line-2);background:var(--panel);padding:24px 24px 22px;
+    display:flex;flex-direction:column;gap:12px;transition:.3s cubic-bezier(.4,0,.2,1);
+    position:relative;overflow:hidden;
+  }
+  .proj-card::before{
+    content:"";position:absolute;top:0;left:0;width:100%;height:2px;
+    background:linear-gradient(90deg, var(--sage), var(--accent));
+    transform:scaleX(0);transform-origin:left;transition:transform .4s ease;
+  }
+  .proj-card:hover{border-color:var(--sage);transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+  .proj-card:hover::before{transform:scaleX(1)}
+  .proj-card .p-num{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;color:var(--sage);text-transform:uppercase}
+  .proj-card .p-title{font-family:'Fraunces',serif;font-size:22px;color:var(--ink);line-height:1.15;font-weight:500;letter-spacing:-.005em;min-height:52px}
+  .proj-card .p-summary{font-size:12.5px;color:var(--ink-dim);line-height:1.65;flex:1}
+  .proj-card .p-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .proj-card .p-tag{
+    font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+    padding:3px 8px;border:1px solid var(--line-2);color:var(--ink-dim);background:var(--bg-3);
+  }
+  .proj-card .p-link{
+    margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--sage);display:flex;align-items:center;gap:8px;padding-top:12px;border-top:1px solid var(--line);transition:.2s;
+  }
+  .proj-card .p-link:hover{color:var(--accent);gap:12px}
+
+  /* ==================== SKILLS ==================== */
+  .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line-2)}
+  .skill-cat{background:var(--panel);padding:20px;transition:background .2s}
+  .skill-cat:hover{background:var(--panel-2)}
+  .skill-cat h4{font-size:10px;letter-spacing:.22em;color:var(--sage);text-transform:uppercase;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .skill-cat ul{list-style:none}
+  .skill-cat li{font-size:12.5px;color:var(--ink);padding:5px 0;position:relative;padding-left:14px;font-family:'JetBrains Mono',monospace}
+  .skill-cat li::before{content:"›";position:absolute;left:0;color:var(--sage)}
+
+  /* Languages/certs */
+  .lang-row{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;padding:14px 0;border-bottom:1px dashed var(--line);font-size:13px}
+  .lang-row:last-child{border-bottom:none}
+  .lang-row .l-name{font-family:'Fraunces',serif;font-size:17px;color:var(--ink);min-width:140px}
+  .lang-row .l-bar{height:2px;background:var(--bg-3);position:relative;overflow:hidden}
+  .lang-row .l-bar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg, var(--sage), var(--sage-2))}
+  .lang-row .l-level{font-size:11px;letter-spacing:.14em;color:var(--sage);text-transform:uppercase;min-width:130px;text-align:right}
+
+  .certs-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+  .cert{padding:20px;border:1px solid var(--line-2);background:var(--panel);display:flex;justify-content:space-between;align-items:center;transition:.25s}
+  .cert:hover{border-color:var(--sage);transform:translateY(-2px)}
+  .cert .c-name{font-family:'Fraunces',serif;font-size:20px;color:var(--ink)}
+  .cert .c-score{font-family:'JetBrains Mono',monospace;color:var(--sage);font-size:22px;font-weight:500}
+
+  /* ==================== TESTIMONIALS ==================== */
+  .testimonials-intro{
+    padding:22px 26px;border:1px solid var(--line-2);background:var(--panel);margin-bottom:24px;
+    display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;
+  }
+  .testimonials-intro .ti-badge{
+    font-family:'Fraunces',serif;font-size:44px;color:var(--sage);line-height:1;
+    padding:16px 22px;border:1px solid var(--sage);background:var(--bg-3);letter-spacing:.02em;
+    font-style:italic;
+  }
+  .testimonials-intro .ti-body{font-size:13px;color:var(--ink-dim);line-height:1.7}
+  .testimonials-intro .ti-body b{color:var(--ink);font-weight:500}
+  .testimonials-intro .ti-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;color:var(--sage);text-transform:uppercase;margin-bottom:8px;display:block}
+
+  /* ISFJ 4-box grid */
+  .isfj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+  .isfj-card{
+    padding:20px 20px 18px;border:1px solid var(--line-2);background:var(--panel);
+    position:relative;transition:.3s cubic-bezier(.4,0,.2,1);overflow:hidden;
+  }
+  .isfj-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--sage);
+    transform:scaleX(0);transform-origin:left;transition:transform .35s ease;
+  }
+  .isfj-card:hover{border-color:var(--sage);transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+  .isfj-card:hover::before{transform:scaleX(1)}
+  .isfj-letter{
+    font-family:'Fraunces',serif;font-size:56px;line-height:1;color:var(--sage);
+    font-weight:400;font-style:italic;margin-bottom:8px;letter-spacing:-.02em;
+  }
+  .isfj-title{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--accent);
+    text-transform:uppercase;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line);
+  }
+  .isfj-desc{font-size:12.5px;line-height:1.65;color:var(--ink-dim);font-family:'JetBrains Mono',monospace;text-wrap:pretty}
+
+  .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote-card{
+    padding:26px 26px 22px;border:1px solid var(--line-2);background:var(--panel);position:relative;
+    transition:.3s;display:flex;flex-direction:column;gap:14px;
+  }
+  .quote-card:hover{border-color:var(--sage);transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+  .quote-card .q-mark{
+    font-family:'Fraunces',serif;font-size:64px;color:var(--sage);line-height:.6;
+    position:absolute;top:20px;right:22px;opacity:.4;font-style:italic;
+  }
+  .quote-card .q-text{
+    font-family:'Fraunces',serif;font-size:15.5px;line-height:1.6;color:var(--ink);
+    font-style:italic;text-wrap:pretty;flex:1;padding-right:20px;
+  }
+  .quote-card .q-attr{padding-top:14px;border-top:1px solid var(--line);display:flex;align-items:center;gap:12px}
+  .quote-card .q-avatar{
+    width:36px;height:36px;border-radius:50%;background:var(--bg-3);border:1px solid var(--sage);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--sage);font-weight:600;
+  }
+  .quote-card .q-who{font-family:'Fraunces',serif;font-size:14px;color:var(--ink);font-weight:500;line-height:1.2}
+  .quote-card .q-role{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--ink-mute);letter-spacing:.14em;text-transform:uppercase;margin-top:3px}
+
+  /* ==================== CONTACT ==================== */
+  .contact-block{display:grid;grid-template-columns:1.4fr 1fr;gap:20px}
+  .contact-main{padding:32px;border:1px solid var(--sage);background:linear-gradient(135deg, var(--glow-1), transparent);text-decoration:none;display:block;transition:.25s}
+  .contact-main:hover{background:linear-gradient(135deg, rgba(127,176,105,.15), transparent);transform:translateY(-2px)}
+  .contact-main .c-lab{font-size:10px;letter-spacing:.22em;color:var(--sage);text-transform:uppercase;margin-bottom:14px}
+  .contact-main .c-name{font-family:'Fraunces',serif;font-size:36px;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em}
+  .contact-main .c-email{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--sage-2);word-break:break-all;margin-bottom:20px;display:block}
+  .contact-main .c-note{font-size:12px;color:var(--ink-dim);line-height:1.65;font-family:'JetBrains Mono',monospace;margin-bottom:20px;text-wrap:pretty}
+
+  .contact-socials{display:flex;gap:10px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--line-2)}
+  .contact-socials .s-item{
+    display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid var(--line-2);
+    color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;background:var(--panel);text-decoration:none;transition:.2s;
+  }
+  .contact-socials .s-item:hover{border-color:var(--sage);color:var(--sage-2);transform:translateY(-2px)}
+  .contact-socials .s-item svg{width:14px;height:14px;fill:currentColor}
+
+  .contact-side{display:flex;flex-direction:column;gap:12px}
+  .contact-side .cs-heading{
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.24em;color:var(--sage);
+    text-transform:uppercase;padding:6px 4px 8px;border-bottom:1px dashed var(--line-2);margin-bottom:2px;
+  }
+  .contact-item{padding:16px 18px;border:1px solid var(--line-2);background:var(--panel);transition:.25s;cursor:pointer;text-decoration:none;display:block;position:relative;overflow:hidden}
+  .contact-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--sage);transform:scaleY(0);transform-origin:top;transition:transform .3s ease}
+  .contact-item:hover{border-color:var(--sage);background:var(--bg-3);transform:translateX(4px)}
+  .contact-item:hover::before{transform:scaleY(1)}
+  .contact-item .ci-k{font-size:9.5px;letter-spacing:.22em;color:var(--ink-mute);text-transform:uppercase;margin-bottom:5px}
+  .contact-item .ci-v{font-family:'Fraunces',serif;font-size:17px;color:var(--ink);line-height:1.2}
+  .contact-item .ci-v.mono{font-family:'JetBrains Mono',monospace;font-size:14px}
+  .contact-item .ci-note{margin-top:6px;font-size:11px;color:var(--ink-mute);line-height:1.5;font-family:'JetBrains Mono',monospace}
+
+  /* ==================== FOOTER ==================== */
+  footer{
+    margin-top:60px;padding:32px 0 20px;border-top:1px solid var(--line);
+    display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center;
+  }
+  footer .f-left,footer .f-right{font-size:10.5px;letter-spacing:.14em;color:var(--ink-mute);text-transform:uppercase}
+  footer .f-right{text-align:right}
+  footer .f-socials{display:flex;gap:8px}
+  footer .f-socials a{
+    width:36px;height:36px;border:1px solid var(--line-2);color:var(--ink-dim);
+    display:flex;align-items:center;justify-content:center;transition:.2s;
+  }
+  footer .f-socials a:hover{border-color:var(--sage);color:var(--sage);transform:translateY(-2px)}
+  footer .f-socials svg{width:16px;height:16px;fill:currentColor}
+
+  /* ==================== REVEAL ==================== */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ==================== RESPONSIVE ==================== */
+  @media (max-width:1100px){
+    .nav-links a{padding:8px 8px;font-size:10.5px}
+  }
+  @media (max-width:960px){
+    .rail{display:none}
+    .nav-inner{padding:12px 20px}
+    .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(14px);flex-direction:column;padding:12px 20px;border-bottom:1px solid var(--line-2);gap:0}
+    .nav-links.open{display:flex}
+    .nav-links a{padding:12px 8px;width:100%;border-bottom:1px dashed var(--line);text-align:left}
+    .nav-links a:last-child{border-bottom:none}
+    .nav-links a::after{display:none}
+    .nav-burger{display:flex}
+    .container{padding:88px 20px 60px}
+    header#profile{grid-template-columns:1fr;gap:24px}
+    .name{font-size:56px}
+    .id-fields{grid-template-columns:1fr}
+    .skills{grid-template-columns:1fr 1fr}
+    .two-col,.certs-row,.contact-block,.testimonials-grid{grid-template-columns:1fr}
+    .topbar{grid-template-columns:1fr;gap:6px;text-align:center}
+    .topbar .cell.right,.topbar .cell.center{text-align:center}
+    .testimonials-intro{grid-template-columns:1fr;text-align:center}
+    .testimonials-intro .ti-badge{justify-self:center}
+    .isfj-grid{grid-template-columns:1fr 1fr}
+    .projects-controls{position:relative;top:0;right:0;justify-content:flex-end;margin-bottom:16px}
+    .proj-card{flex:0 0 280px}
+    footer{grid-template-columns:1fr;text-align:center;gap:16px}
+    footer .f-right,footer .f-left{text-align:center}
+    footer .f-socials{justify-content:center}
+    .name{font-size:44px}
+  }
+  /* Email anti-scrape: the @ is wrapped in <span> so raw-text scrapers see it split.
+     Visible glyph stays normal; JS composes real mailto on click. */
+  .js-email{cursor:pointer}
+  .js-email:hover{color:var(--sage-2)}
+  @media (max-width:520px){
+    .skills{grid-template-columns:1fr}
+    .name{font-size:38px}
+    .sec-title{font-size:26px}
+    .theme-toggle{width:48px;height:24px}
+    .theme-toggle .knob{width:18px;height:18px}
+    [data-theme="light"] .theme-toggle .knob{transform:translateX(22px)}
+  }
+
+  /* ==================== FLAG IMAGES (Languages row) ==================== */
+  .flag-tag{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+  .flag-img{
+    display:inline-block;width:18px;height:12px;object-fit:cover;
+    border:1px solid var(--line-2);border-radius:1.5px;vertical-align:middle;
+    box-shadow:0 0 4px rgba(0,0,0,.3);flex-shrink:0;
+    transition:transform .2s ease;
+  }
+  .flag-tag:hover .flag-img{transform:scale(1.15)}
+
+  /* ==================== ENTER PORTFOLIO OVERLAY ==================== */
+  #enterOverlay{
+    position:fixed;inset:0;z-index:9999;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(127,176,105,.14) 0%, transparent 45%),
+      radial-gradient(circle at 80% 70%, rgba(232,209,108,.08) 0%, transparent 45%),
+      var(--bg);
+    display:flex;align-items:center;justify-content:center;
+    flex-direction:column;padding:32px;
+    transition:opacity .8s ease, transform .8s cubic-bezier(.7,0,.3,1), visibility 0s linear .8s;
+    overflow:hidden;
+  }
+  #enterOverlay::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(to bottom, transparent 0, transparent 3px, rgba(0,0,0,.05) 3px, rgba(0,0,0,.05) 4px);
+    opacity:.6;
+  }
+  #enterOverlay::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(to right, transparent 0, transparent calc(50% - 1px), rgba(127,176,105,.15) 50%, transparent calc(50% + 1px), transparent 100%),
+      linear-gradient(to bottom, transparent 0, transparent calc(50% - 1px), rgba(127,176,105,.15) 50%, transparent calc(50% + 1px), transparent 100%);
+    background-size:100% 100%;
+    opacity:.4;
+  }
+  #enterOverlay.hidden{opacity:0;transform:translateY(-20px);visibility:hidden;pointer-events:none}
+  .enter-inner{
+    position:relative;z-index:2;text-align:center;max-width:640px;width:100%;
+    animation:enterFade 1s ease-out both;
+  }
+  @keyframes enterFade{
+    from{opacity:0;transform:translateY(20px)}
+    to{opacity:1;transform:none}
+  }
+  .enter-kicker{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.28em;
+    color:var(--sage);text-transform:uppercase;margin-bottom:28px;
+    padding:8px 14px;border:1px solid var(--line-2);background:var(--panel);
+  }
+  .enter-kicker::before{
+    content:"";width:8px;height:8px;background:var(--sage);border-radius:50%;
+    box-shadow:0 0 10px var(--sage);animation:pulse 2s infinite;
+  }
+  .enter-title{
+    font-family:'Fraunces',serif;font-weight:400;
+    font-size:clamp(48px,8vw,96px);line-height:.95;letter-spacing:-.03em;color:var(--ink);
+    margin-bottom:14px;text-wrap:balance;
+  }
+  .enter-title .em{font-style:italic;color:var(--sage-2)}
+  .enter-role{
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.2em;
+    color:var(--ink-dim);text-transform:uppercase;margin-bottom:36px;
+  }
+  .enter-role .sep{color:var(--sage);margin:0 12px}
+  .enter-status{
+    display:inline-flex;align-items:center;gap:12px;
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;
+    color:var(--accent);text-transform:uppercase;margin-bottom:44px;padding:10px 18px;
+    border:1px dashed var(--line-2);
+  }
+  .enter-status b{color:var(--ink);font-weight:400}
+  .enter-status .beat{
+    display:inline-block;width:6px;height:6px;background:var(--accent);
+    border-radius:50%;animation:beat 1.2s ease-in-out infinite;
+  }
+  @keyframes beat{
+    0%,100%{transform:scale(1);opacity:1}
+    50%{transform:scale(1.6);opacity:.4}
+  }
+  .enter-btn{
+    display:inline-flex;align-items:center;gap:14px;
+    padding:18px 32px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.24em;
+    text-transform:uppercase;background:var(--sage);color:var(--bg);border:1px solid var(--sage);
+    cursor:pointer;transition:.25s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;
+    font-weight:600;
+  }
+  .enter-btn::before{
+    content:"";position:absolute;inset:0;background:var(--sage-2);
+    transform:scaleX(0);transform-origin:left;transition:transform .4s ease;z-index:0;
+  }
+  .enter-btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(127,176,105,.4)}
+  .enter-btn:hover::before{transform:scaleX(1)}
+  .enter-btn > *{position:relative;z-index:1}
+  .enter-btn .arr{font-family:'Fraunces',serif;font-style:italic;font-size:18px;letter-spacing:0}
+  .enter-hint{
+    margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;
+    color:var(--ink-mute);text-transform:uppercase;
+  }
+  .enter-hint kbd{
+    display:inline-block;padding:2px 6px;border:1px solid var(--line-2);border-radius:2px;
+    background:var(--panel);color:var(--ink);margin:0 3px;font-family:inherit;font-size:9.5px;
+  }
+  /* corner brackets */
+  .enter-corners{position:absolute;inset:24px;pointer-events:none;z-index:1}
+  .enter-corners::before,.enter-corners::after,
+  .enter-corners > i:first-child,.enter-corners > i:last-child{
+    content:"";position:absolute;width:26px;height:26px;border:1px solid var(--sage);opacity:.6;
+  }
+  .enter-corners::before{top:0;left:0;border-right:none;border-bottom:none}
+  .enter-corners::after{top:0;right:0;border-left:none;border-bottom:none}
+  .enter-corners > i:first-child{bottom:0;left:0;border-right:none;border-top:none}
+  .enter-corners > i:last-child{bottom:0;right:0;border-left:none;border-top:none}
+  body.enter-locked{overflow:hidden;height:100vh}
+
+  /* ==================== HOBBIES & INTERESTS (§09) ==================== */
+  .hobbies-filter{
+    display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;
+    padding:16px;border:1px solid var(--line-2);background:var(--panel);
+  }
+  .hobbies-filter .hf-label{
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;
+    color:var(--sage);text-transform:uppercase;padding:6px 10px;
+    border-right:1px solid var(--line-2);margin-right:6px;display:flex;align-items:center;
+  }
+  .hobbies-filter .hf-chip{
+    font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    padding:7px 12px;border:1px solid var(--line-2);background:var(--bg-3);color:var(--ink-dim);
+    cursor:pointer;transition:.2s;user-select:none;
+  }
+  .hobbies-filter .hf-chip:hover{border-color:var(--sage);color:var(--sage-2)}
+  .hobbies-filter .hf-chip.active{background:var(--sage);border-color:var(--sage);color:var(--bg);font-weight:500}
+
+  .hobbies-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .hobby-card{
+    padding:22px 22px 20px;border:1px solid var(--line-2);
+    background:
+      linear-gradient(135deg, rgba(127,176,105,.05) 0%, transparent 60%),
+      var(--panel);
+    position:relative;overflow:hidden;transition:.35s cubic-bezier(.4,0,.2,1);
+    display:flex;flex-direction:column;gap:12px;
+  }
+  /* glassmorphism sheen */
+  .hobby-card::before{
+    content:"";position:absolute;top:0;left:-100%;width:60%;height:100%;
+    background:linear-gradient(90deg,transparent,rgba(232,236,216,.06),transparent);
+    transition:left .8s ease;pointer-events:none;
+  }
+  .hobby-card:hover{border-color:var(--sage);transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+  .hobby-card:hover::before{left:120%}
+  .hobby-card.dim{opacity:.25;filter:grayscale(.6);transform:scale(.98)}
+  .hobby-card .h-head{display:flex;align-items:center;gap:12px}
+  .hobby-card .h-icon{
+    width:44px;height:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+    background:var(--bg-3);border:1px solid var(--sage);
+    font-family:'Fraunces',serif;font-size:24px;font-style:italic;color:var(--sage);
+    transition:.3s;
+  }
+  .hobby-card .h-icon svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;
+    stroke-linecap:round;stroke-linejoin:round;transition:.3s}
+  .hobby-card:hover .h-icon{background:var(--sage);color:var(--bg);transform:rotate(-4deg) scale(1.05)}
+  .hobby-card .h-title{
+    font-family:'Fraunces',serif;font-size:19px;line-height:1.15;color:var(--ink);font-weight:500;
+    letter-spacing:-.005em;
+  }
+  .hobby-card .h-cat{
+    font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.22em;color:var(--sage);
+    text-transform:uppercase;margin-top:2px;
+  }
+  .hobby-card .h-desc{
+    font-size:12.5px;line-height:1.6;color:var(--ink-dim);
+    font-family:'JetBrains Mono',monospace;text-wrap:pretty;
+  }
+  .hobby-card .h-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:8px;border-top:1px dashed var(--line)}
+  .hobby-card .h-tag{
+    font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.06em;
+    padding:3px 8px;border:1px solid var(--line-2);color:var(--ink-dim);background:var(--bg-3);
+    text-transform:none;
+  }
+  @media (max-width:960px){
+    .hobbies-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:520px){
+    .hobbies-grid{grid-template-columns:1fr}
+    .enter-title{font-size:44px}
+    .enter-btn{padding:14px 24px;font-size:11px}
+  }
+
+  /* Split-layout live-readout rows: label + inline logo on left, value on right */
+  .readout .r-row-split{align-items:center;gap:10px}
+  .readout .r-row-split .r-left{display:inline-flex;align-items:center;gap:8px;color:var(--ink-dim);white-space:nowrap}
+  .readout .r-row-split .r-left .r-k{color:var(--ink-dim)}
+  .readout .r-row-split .r-right{color:var(--ink);text-align:right;white-space:nowrap}
+  .readout .r-row-split .r-right .accent{color:var(--accent)}
+  .readout .r-internship-val{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+
+  /* ==================== INSTITUTION LOGOS ==================== */
+  .inst-logo{
+    display:inline-block;max-height:22px;width:auto;object-fit:contain;
+    vertical-align:middle;margin-left:6px;
+    filter:drop-shadow(0 0 0 transparent);
+    transition:transform .25s ease, filter .25s ease;
+  }
+  [data-theme="dark"] .inst-logo{
+    filter:brightness(1.05) contrast(1.02);
+  }
+  [data-theme="light"] .inst-logo{
+    filter:brightness(.98) contrast(1.02);
+  }
+  /* Logos that need inversion on dark bg (mostly dark-colored transparent PNGs) */
+  [data-theme="dark"] .inst-logo.on-dark-invert{
+    filter:brightness(0) invert(1) brightness(.95) contrast(1);
+  }
+  .inst-logo:hover{transform:scale(1.06)}
+
+  /* Larger card-header logo (Experience / Education / Leadership top) */
+  /* Positioned top-right, above the date range — transparent cutout */
+  .card-logo{
+    display:block;max-height:68px;max-width:140px;width:auto;height:auto;object-fit:contain;
+    background:transparent;border:none;padding:0;margin:0;
+    transition:transform .25s ease, filter .25s ease;
+  }
+  /* Larger variant — for Experience cards where the date is now on the left column */
+  .card-logo.card-logo-lg{max-height:100px;max-width:180px}
+  [data-theme="dark"] .card-logo{filter:brightness(1.08) contrast(1.05) drop-shadow(0 0 6px rgba(232,236,216,.08))}
+  [data-theme="light"] .card-logo{filter:brightness(.96) contrast(1.03)}
+  /* Dark-colored logos on transparent BG — invert for visibility on dark theme */
+  [data-theme="dark"] .card-logo.on-dark-invert{
+    filter:brightness(0) invert(1) brightness(.98) contrast(1.05) drop-shadow(0 0 6px rgba(232,236,216,.12));
+  }
+  [data-theme="light"] .card-logo.on-dark-invert{
+    filter:brightness(.92) contrast(1.05);
+  }
+  .card-logo:hover{transform:scale(1.04)}
+
+  /* Right-column stack: logo on top, date directly below */
+  .entry-right, .edu-right{
+    display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-start;
+    gap:10px;flex-shrink:0;padding-top:2px;text-align:right;
+  }
+  .entry-right .card-logo, .edu-right .card-logo{margin:0}
+  .entry-right .entry-date, .edu-right .e-date{padding:0;margin:0}
+
+  /* Responsive: on narrow screens, collapse to single column */
+  @media (max-width:640px){
+    .entry-head, .edu-item .e-head{grid-template-columns:1fr;gap:12px}
+    .entry-right, .edu-right{align-items:flex-start;text-align:left;padding-top:0}
+    .edu-item .edu-right{margin-top:0}
+    .card-logo{max-height:56px;max-width:120px}
+  }
+
+  /* ==================== FULL-WIDTH CERT CARD (§07) ==================== */
+  .cert-wide{
+    display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;
+    padding:22px 26px;border:1px solid var(--sage);
+    background:linear-gradient(135deg, var(--glow-1), transparent);
+    margin-bottom:16px;transition:.25s cubic-bezier(.4,0,.2,1);position:relative;
+  }
+  .cert-wide::before{
+    content:"FEATURED CERTIFICATION";position:absolute;top:-9px;left:20px;
+    background:var(--bg);padding:0 10px;font-family:'JetBrains Mono',monospace;
+    font-size:9.5px;letter-spacing:.22em;color:var(--sage);
+  }
+  .cert-wide:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover);
+    background:linear-gradient(135deg, rgba(127,176,105,.15), transparent)}
+  .cert-wide .cw-logo{
+    max-height:58px;max-width:140px;width:auto;height:auto;object-fit:contain;
+    background:transparent;border:none;padding:0;margin:0;
+    transition:transform .25s ease, filter .25s ease;
+  }
+  [data-theme="dark"] .cert-wide .cw-logo{filter:brightness(0) invert(1) brightness(.98) contrast(1.05) drop-shadow(0 0 6px rgba(232,236,216,.12))}
+  [data-theme="light"] .cert-wide .cw-logo{filter:brightness(.96) contrast(1.03)}
+  .cert-wide:hover .cw-logo{transform:scale(1.04)}
+  .cert-wide .cw-body{min-width:0;display:flex;flex-direction:column;gap:6px}
+  .cert-wide .cw-title{
+    font-family:'Fraunces',serif;font-size:20px;color:var(--ink);
+    font-weight:500;letter-spacing:-.005em;line-height:1.2;
+  }
+  .cert-wide .cw-sub{
+    font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.14em;
+    color:var(--ink-mute);text-transform:uppercase;line-height:1.5;
+  }
+  .cert-wide .cw-sub b{color:var(--accent);font-weight:500}
+  .cert-wide .cw-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  .cert-wide .cw-link{
+    display:inline-flex;align-items:center;gap:6px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    padding:7px 12px;border:1px solid var(--line-2);background:var(--panel);color:var(--ink);
+    text-decoration:none;transition:.2s;
+  }
+  .cert-wide .cw-link:hover{border-color:var(--sage);color:var(--sage-2);background:var(--bg-3);transform:translateY(-1px)}
+  .cert-wide .cw-right{
+    display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;
+  }
+  .cert-wide .cw-score{
+    font-family:'JetBrains Mono',monospace;color:var(--sage);font-size:32px;font-weight:500;line-height:1;
+  }
+  .cert-wide .cw-score-label{
+    font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.22em;
+    color:var(--ink-mute);text-transform:uppercase;
+  }
+  @media (max-width:640px){
+    .cert-wide{grid-template-columns:1fr;gap:14px;text-align:left}
+    .cert-wide .cw-right{align-items:flex-start;flex-direction:row;align-items:baseline;gap:10px}
+  }
+
+  /* Cert row logo */
+  .cert-logo{
+    display:block;max-height:36px;width:auto;object-fit:contain;margin-right:14px;
+    transition:transform .25s ease, filter .25s ease;
+  }
+  [data-theme="dark"] .cert-logo{filter:brightness(1.05) contrast(1.02)}
+  [data-theme="light"] .cert-logo{filter:brightness(.98) contrast(1.02)}
+  [data-theme="dark"] .cert-logo.on-dark-invert{filter:brightness(0) invert(1) brightness(.98) contrast(1.05) drop-shadow(0 0 6px rgba(232,236,216,.12))}
+  [data-theme="light"] .cert-logo.on-dark-invert{filter:brightness(.94) contrast(1.05)}
+  .cert:hover .cert-logo{transform:scale(1.06)}
+
+  /* Featured cert card — issuing body logos & BNSP highlight */
+  .cert-wide .cw-issuers{
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+    padding:8px 0 2px;margin-top:2px;
+  }
+  .cert-wide .cw-issuer-logo{
+    display:block;max-height:28px;max-width:90px;width:auto;height:auto;object-fit:contain;
+    background:transparent;border:none;padding:0;margin:0;opacity:.85;
+    transition:transform .25s ease, filter .25s ease, opacity .25s ease;
+  }
+  [data-theme="dark"] .cert-wide .cw-issuer-logo{filter:brightness(1.05) contrast(1.02)}
+  [data-theme="light"] .cert-wide .cw-issuer-logo{filter:brightness(.96) contrast(1.02)}
+  [data-theme="dark"] .cert-wide .cw-issuer-logo.on-dark-invert{filter:brightness(0) invert(1) brightness(.98) contrast(1.05) drop-shadow(0 0 6px rgba(232,236,216,.12))}
+  [data-theme="light"] .cert-wide .cw-issuer-logo.on-dark-invert{filter:brightness(.94) contrast(1.05)}
+  .cert-wide .cw-issuer-logo:hover{opacity:1;transform:scale(1.06)}
+  /* Yellow highlight for BNSP badge */
+  .cert-wide .cw-hi{
+    display:inline-block;padding:1px 7px;
+    background:rgba(232,209,108,.16);color:var(--accent);
+    border:1px solid rgba(232,209,108,.5);
+    font-weight:600;letter-spacing:.06em;
+    border-radius:2px;
+  }
+  [data-theme="light"] .cert-wide .cw-hi{
+    background:rgba(168,128,26,.14);color:var(--accent);
+    border-color:rgba(168,128,26,.4);
+  }
+
+  /* Live readout inline logo */
+  .r-logo{
+    display:inline-block;max-height:16px;width:auto;object-fit:contain;
+    vertical-align:middle;margin-left:6px;
+    transition:transform .25s ease;
+  }
+  [data-theme="dark"] .r-logo{filter:brightness(1.05) contrast(1.02)}
+  [data-theme="light"] .r-logo{filter:brightness(.98) contrast(1.02)}
+  [data-theme="dark"] .r-logo.on-dark-invert{filter:brightness(0) invert(1) brightness(.95)}
+  .r-logo:hover{transform:scale(1.15)}
+
+  /* Cert block layout: logo + text + score */
+  .cert-inner{display:flex;align-items:center;gap:14px;flex:1;min-width:0}
+  .cert-inner .cert-txt{min-width:0}
+</style>
+</head>
+<body data-om-id="d44bb400:om-body-1" class="enter-locked">
+
+<!-- ==================== ENTER PORTFOLIO OVERLAY ==================== -->
+<div data-om-id="d44bb400:om-div-1" id="enterOverlay" role="dialog" aria-modal="true" aria-labelledby="enterTitle">
+  <div data-om-id="d44bb400:om-div-2" class="enter-corners"><i data-om-id="d44bb400:om-i-1"></i><i data-om-id="d44bb400:om-i-2"></i></div>
+  <div data-om-id="d44bb400:om-div-3" class="enter-inner">
+    <span data-om-id="d44bb400:om-span-1" data-om-text-id="txt:index.html:52638:52661" class="enter-kicker">YFM · Instrument Panel</span>
+    <h1 data-om-id="d44bb400:om-h1-1" id="enterTitle" class="enter-title">Yoshio Faris<br data-om-id="d44bb400:om-br-1"><span data-om-id="d44bb400:om-span-2" data-om-text-id="txt:index.html:52746:52754" class="em">Makarim.</span></h1>
+    <div data-om-id="d44bb400:om-div-4" class="enter-role">Nanotechnology Engineer <span data-om-id="d44bb400:om-span-3" data-om-text-id="txt:index.html:52837:52838" class="sep">/</span> QA &amp; Data Analyst</div>
+    <div data-om-id="d44bb400:om-div-5" class="enter-status">
+      <span data-om-id="d44bb400:om-span-4" class="beat"></span>
+      YFM System Ready <b data-om-id="d44bb400:om-b-1" data-om-text-id="txt:index.html:52964:52966">//</b> Tangerang <b data-om-id="d44bb400:om-b-2" data-om-text-id="txt:index.html:52984:52986">//</b> GMT+7
+    </div>
+    <br data-om-id="d44bb400:om-br-2">
+    <button data-om-id="d44bb400:om-button-1" class="enter-btn" id="enterBtn" type="button">
+      <span data-om-id="d44bb400:om-span-5" data-om-text-id="txt:index.html:53088:53103">Enter Portfolio</span>
+      <span data-om-id="d44bb400:om-span-6" data-om-text-id="txt:index.html:53135:53138" class="arr">→</span>
+    </button>
+    <div data-om-id="d44bb400:om-div-6" class="enter-hint">Press <kbd data-om-id="d44bb400:om-kbd-1" data-om-text-id="txt:index.html:53199:53204">Enter</kbd> or click to continue</div>
+  </div>
+</div>
+
+<!-- ==================== STICKY NAVBAR ==================== -->
+<nav data-om-id="d44bb400:om-nav-1" class="navbar" id="navbar">
+  <div data-om-id="d44bb400:om-div-7" class="nav-inner">
+    <a data-om-id="d44bb400:om-a-1" href="#profile" class="nav-brand"><span data-om-id="d44bb400:om-span-7" class="b-dot"></span>YFM <b data-om-id="d44bb400:om-b-3" data-om-text-id="txt:index.html:53454:53456">·</b> PORTFOLIO</a>
+    <div data-om-id="d44bb400:om-div-8" class="nav-links" id="navLinks">
+      <a data-om-id="d44bb400:om-a-2" data-om-text-id="txt:index.html:53542:53549" href="#profile">Profile</a>
+      <a data-om-id="d44bb400:om-a-3" data-om-text-id="txt:index.html:53582:53592" href="#experience">Experience</a>
+      <a data-om-id="d44bb400:om-a-4" data-om-text-id="txt:index.html:53624:53633" href="#education">Education</a>
+      <a data-om-id="d44bb400:om-a-5" data-om-text-id="txt:index.html:53664:53672" href="#projects">Projects</a>
+      <a data-om-id="d44bb400:om-a-6" data-om-text-id="txt:index.html:53701:53707" href="#skills">Skills</a>
+      <a data-om-id="d44bb400:om-a-7" data-om-text-id="txt:index.html:53742:53754" href="#testimonials">Testimonials</a>
+      <a data-om-id="d44bb400:om-a-8" data-om-text-id="txt:index.html:53784:53791" href="#hobbies">Hobbies</a>
+      <a data-om-id="d44bb400:om-a-9" data-om-text-id="txt:index.html:53821:53828" href="#contact">Contact</a>
+    </div>
+    <div data-om-id="d44bb400:om-div-9" class="nav-right">
+      <button data-om-id="d44bb400:om-button-2" class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark mode">
+        <span data-om-id="d44bb400:om-span-8" class="knob">
+          <span data-om-id="d44bb400:om-span-9" data-om-text-id="txt:index.html:54049:54052" class="ico ico-moon">☾</span>
+          <span data-om-id="d44bb400:om-span-10" data-om-text-id="txt:index.html:54096:54099" class="ico ico-sun">☀</span>
+        </span>
+      </button>
+      <button data-om-id="d44bb400:om-button-3" class="nav-burger" id="navBurger" aria-label="Menu"><span data-om-id="d44bb400:om-span-11"></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== LEFT RAIL ==================== -->
+<div data-om-id="d44bb400:om-div-10" class="rail">
+  <div data-om-id="d44bb400:om-div-11" data-om-text-id="txt:index.html:54357:54381" class="brand">YFM · PORTFOLIO · 2026</div>
+  <div data-om-id="d44bb400:om-div-12" class="status"><span data-om-id="d44bb400:om-span-12" class="dot"></span>OPEN TO WORK</div>
+</div>
+
+<div data-om-id="d44bb400:om-div-13" class="container">
+
+  <!-- Top bar -->
+  <div data-om-id="d44bb400:om-div-14" class="topbar">
+    <div data-om-id="d44bb400:om-div-15" class="cell">SYSTEM: <b data-om-id="d44bb400:om-b-4" data-om-text-id="txt:index.html:54562:54568">YFM-01</b> · v2026.09</div>
+    <div data-om-id="d44bb400:om-div-16" data-om-text-id="txt:index.html:54620:54654" class="cell center">— NANOTECHNOLOGY / QA / DATA —</div>
+    <div data-om-id="d44bb400:om-div-17" data-om-text-id="txt:index.html:54689:54707" class="cell right">TANGERANG · GMT+7</div>
+  </div>
+
+  <!-- ==================== PROFILE / HERO ==================== -->
+  <header data-om-id="d44bb400:om-header-1" id="profile">
+    <div data-om-id="d44bb400:om-div-18" class="id-block">
+      <div data-om-id="d44bb400:om-div-19" data-om-text-id="txt:index.html:54869:54905" class="kicker">Instrument Panel — Subject Profile</div>
+      <h1 data-om-id="d44bb400:om-h1-2" class="name">Yoshio Faris<br data-om-id="d44bb400:om-br-3"><span data-om-id="d44bb400:om-span-13" data-om-text-id="txt:index.html:54970:54978" class="last">Makarim.</span></h1>
+      <div data-om-id="d44bb400:om-div-20" class="role">Nanotechnology Engineer <span data-om-id="d44bb400:om-span-14" data-om-text-id="txt:index.html:55057:55058" class="sep">/</span> QA & Data Analyst</div>
+
+      <div data-om-id="d44bb400:om-div-21" class="id-fields">
+        <div data-om-id="d44bb400:om-div-22"><div data-om-id="d44bb400:om-div-23" data-om-text-id="txt:index.html:55149:55155" class="k">Degree</div><div data-om-id="d44bb400:om-div-24" class="v">B.Eng. Nanotechnology<br data-om-id="d44bb400:om-br-4">Airlangga University</div></div>
+        <div data-om-id="d44bb400:om-div-25"><div data-om-id="d44bb400:om-div-26" data-om-text-id="txt:index.html:55262:55265" class="k">GPA</div><div data-om-id="d44bb400:om-div-27" data-om-text-id="txt:index.html:55286:55297" class="v">3.32 / 4.00</div></div>
+        <div data-om-id="d44bb400:om-div-28"><div data-om-id="d44bb400:om-div-29" data-om-text-id="txt:index.html:55338:55346" class="k">Location</div><div data-om-id="d44bb400:om-div-30" data-om-text-id="txt:index.html:55367:55390" class="v">Tangerang, Banten 15156</div></div>
+        <div data-om-id="d44bb400:om-div-31"><div data-om-id="d44bb400:om-div-32" data-om-text-id="txt:index.html:55431:55443" class="k">Availability</div><div data-om-id="d44bb400:om-div-33" data-om-text-id="txt:index.html:55464:55485" class="v">Sep 2026 · Full-time</div></div>
+        <div data-om-id="d44bb400:om-div-34"><div data-om-id="d44bb400:om-div-35" data-om-text-id="txt:index.html:55526:55531" class="k">Email</div><div data-om-id="d44bb400:om-div-36" class="v"><a data-om-id="d44bb400:om-a-10" class="js-email" href="#" data-u="yoshio.faris" data-d="gmail.com">yoshio.faris<span data-om-id="d44bb400:om-span-15" data-om-text-id="txt:index.html:55640:55641">@</span>gmail.com</a></div></div>
+        <div data-om-id="d44bb400:om-div-37"><div data-om-id="d44bb400:om-div-38" data-om-text-id="txt:index.html:55702:55707" class="k">Phone</div><div data-om-id="d44bb400:om-div-39" class="v"><a data-om-id="d44bb400:om-a-11" data-om-text-id="txt:index.html:55810:55826" class="js-wa" href="https://wa.me/628119944872" target="_blank" rel="noopener">+62 811 9944 872</a></div></div>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-40" class="actions">
+        <a data-om-id="d44bb400:om-a-12" data-om-text-id="txt:index.html:55938:55953" class="btn" href="Assets/CV_Yoshio.pdf" download>Download CV ↓</a>
+        <a data-om-id="d44bb400:om-a-13" data-om-text-id="txt:index.html:56110:56141" class="btn ghost" href="https://drive.google.com/drive/folders/1Gc-mKpIKlaG11wD4nDqxFfypbOMV8Ob6?usp=sharing" target="_blank" rel="noopener">View Certificate Repository ↗</a>
+      </div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-41" class="hero-right">
+      <div data-om-id="d44bb400:om-div-42" class="instrument">
+        <div data-om-id="d44bb400:om-div-43" class="instrument-label"><span data-om-id="d44bb400:om-span-16" class="l-dot"></span>CH.01 — SUBJECT IMAGE</div>
+        <div data-om-id="d44bb400:om-div-44" style="height:22px"></div>
+        <div data-om-id="d44bb400:om-div-45" class="avatar">
+          <img data-om-id="d44bb400:om-img-1" src="Assets/profil.png" alt="Yoshio Faris Makarim">
+        </div>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-46" class="instrument">
+        <div data-om-id="d44bb400:om-div-47" class="instrument-label"><span data-om-id="d44bb400:om-span-17" class="l-dot"></span>CH.02 — MOLECULAR TRACE</div>
+        <div data-om-id="d44bb400:om-div-48" style="height:22px"></div>
+        <div data-om-id="d44bb400:om-div-49" class="orbit-panel">
+          <svg data-om-id="d44bb400:om-svg-1" class="orbit" viewBox="0 0 100 100">
+            <g data-om-id="d44bb400:om-g-1" class="orbit-anim-1"><ellipse class="ring" cx="50" cy="50" rx="42" ry="16" data-om-id="d44bb400:om-ellipse-1"/></g>
+            <g data-om-id="d44bb400:om-g-2" class="orbit-anim-2"><ellipse class="ring" cx="50" cy="50" rx="42" ry="16" transform="rotate(60 50 50)" data-om-id="d44bb400:om-ellipse-2"/></g>
+            <g data-om-id="d44bb400:om-g-3" class="orbit-anim-3"><ellipse class="ring" cx="50" cy="50" rx="42" ry="16" transform="rotate(120 50 50)" data-om-id="d44bb400:om-ellipse-3"/></g>
+            <circle class="ring" cx="50" cy="50" r="24" data-om-id="d44bb400:om-circle-1"/>
+            <circle class="ring" cx="50" cy="50" r="34" opacity=".3" data-om-id="d44bb400:om-circle-2"/>
+            <g data-om-id="d44bb400:om-g-4" class="orbit-anim-1"><circle class="electron" cx="92" cy="50" r="1.6" data-om-id="d44bb400:om-circle-3"/></g>
+            <g data-om-id="d44bb400:om-g-5" class="orbit-anim-2"><circle class="electron" cx="8" cy="50" r="1.6" transform="rotate(60 50 50)" data-om-id="d44bb400:om-circle-4"/></g>
+            <g data-om-id="d44bb400:om-g-6" class="orbit-anim-3"><circle class="electron" cx="92" cy="50" r="1.6" transform="rotate(120 50 50)" data-om-id="d44bb400:om-circle-5"/></g>
+            <circle class="core" cx="50" cy="50" r="3.5" data-om-id="d44bb400:om-circle-6"/>
+            <circle class="core" cx="50" cy="50" r="6" opacity=".2" data-om-id="d44bb400:om-circle-7"/>
+            <text data-om-id="d44bb400:om-text-1" data-om-text-id="txt:index.html:57718:57724" class="label" x="4" y="6">ICY-AM</text>
+            <text data-om-id="d44bb400:om-text-2" data-om-text-id="txt:index.html:57777:57794" class="label" x="4" y="97">TETRACYCLINE ADS.</text>
+            <text data-om-id="d44bb400:om-text-3" data-om-text-id="txt:index.html:57865:57887" class="label" x="96" y="6" text-anchor="end">C₂₂H₂₄N₂O₈</text>
+          </svg>
+        </div>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-50" class="readout">
+        <div data-om-id="d44bb400:om-div-51" class="r-title"><span data-om-id="d44bb400:om-span-18" data-om-text-id="txt:index.html:58004:58016">LIVE READOUT</span><span data-om-id="d44bb400:om-span-19" data-om-text-id="txt:index.html:58029:58044">UPDATED 2026-09</span></div>
+        <div data-om-id="d44bb400:om-div-52" class="r-row"><span data-om-id="d44bb400:om-span-20" data-om-text-id="txt:index.html:58103:58112" class="r-k">LANGUAGES</span><span data-om-id="d44bb400:om-span-21" class="r-v flag-row"><span data-om-id="d44bb400:om-span-22" data-om-text-id="txt:index.html:58167:58168" class="accent">4</span> · <span data-om-id="d44bb400:om-span-23" class="flag-tag">ID <img data-om-id="d44bb400:om-img-2" class="flag-img" src="Assets/id.png" alt="Indonesia flag"></span> · <span data-om-id="d44bb400:om-span-24" class="flag-tag">EN <img data-om-id="d44bb400:om-img-3" class="flag-img" src="Assets/en.png" alt="United Kingdom flag"></span> · <span data-om-id="d44bb400:om-span-25" class="flag-tag">JP <img data-om-id="d44bb400:om-img-4" class="flag-img" src="Assets/jp.png" alt="Japan flag"></span> · <span data-om-id="d44bb400:om-span-26" class="flag-tag">KR <img data-om-id="d44bb400:om-img-5" class="flag-img" src="Assets/kr.png" alt="South Korea flag"></span></span></div>
+        <div data-om-id="d44bb400:om-div-53" class="r-row"><span data-om-id="d44bb400:om-span-27" data-om-text-id="txt:index.html:58609:58626" class="r-k">RESEARCH PROJECTS</span><span data-om-id="d44bb400:om-span-28" class="r-v"><span data-om-id="d44bb400:om-span-29" data-om-text-id="txt:index.html:58672:58673" class="accent">2</span></span></div>
+        <div data-om-id="d44bb400:om-div-54" class="r-row"><span data-om-id="d44bb400:om-span-30" data-om-text-id="txt:index.html:58739:58750" class="r-k">INTERNSHIPS</span><span data-om-id="d44bb400:om-span-31" class="r-v"><span data-om-id="d44bb400:om-span-32" data-om-text-id="txt:index.html:58796:58797" class="accent">1</span> · Kimia Farma</span></div>
+        <div data-om-id="d44bb400:om-div-55" class="r-row"><span data-om-id="d44bb400:om-span-33" data-om-text-id="txt:index.html:58878:58883" class="r-k">TOEFL</span><span data-om-id="d44bb400:om-span-34" class="r-v">ITP · <span data-om-id="d44bb400:om-span-35" data-om-text-id="txt:index.html:58936:58939" class="accent">560</span></span></div>
+        <div data-om-id="d44bb400:om-div-56" class="r-row"><span data-om-id="d44bb400:om-span-36" data-om-text-id="txt:index.html:59005:59009" class="r-k">JLPT</span><span data-om-id="d44bb400:om-span-37" class="r-v">N3 · <span data-om-id="d44bb400:om-span-38" data-om-text-id="txt:index.html:59061:59063" class="accent">98</span></span></div>
+        <div data-om-id="d44bb400:om-div-57" class="r-row"><span data-om-id="d44bb400:om-span-39" data-om-text-id="txt:index.html:59129:59132" class="r-k">CDA</span><span data-om-id="d44bb400:om-span-40" class="r-v">FinBank · <span data-om-id="d44bb400:om-span-41" data-om-text-id="txt:index.html:59189:59191" class="accent">84</span></span></div>
+      </div>
+    </div>
+  </header>
+
+  <div data-om-id="d44bb400:om-div-58" class="summary reveal">
+    <p data-om-id="d44bb400:om-p-1" data-om-text-id="txt:index.html:59301:59642" class="quote">Highly motivated Nanotechnology Engineering graduate from Airlangga University with experience in data analysis, research, project coordination, and reporting through academic and community projects. Passionate about project development and business, particularly in supporting planning, progress monitoring, and data-driven decision-making.</p>
+  </div>
+
+  <!-- ==================== §01 EXPERIENCE ==================== -->
+  <section data-om-id="d44bb400:om-section-1" id="experience" class="reveal">
+    <div data-om-id="d44bb400:om-div-59" class="sec-head">
+      <div data-om-id="d44bb400:om-div-60"><div data-om-id="d44bb400:om-div-61" data-om-text-id="txt:index.html:59828:59846" class="sec-num">§ 01 / Experience</div><h2 data-om-id="d44bb400:om-h2-1" class="sec-title">Field <span data-om-id="d44bb400:om-span-42" data-om-text-id="txt:index.html:59897:59908" class="em">deployments</span></h2></div>
+      <div data-om-id="d44bb400:om-div-62" data-om-text-id="txt:index.html:59955:59964" class="sec-meta">2 records</div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-63" class="featured">
+      <div data-om-id="d44bb400:om-div-64" class="entry-head">
+        <div data-om-id="d44bb400:om-div-65" class="entry-left">
+          <div data-om-id="d44bb400:om-div-66" data-om-text-id="txt:index.html:60111:60154" class="entry-org big">PT. Kimia Farma Tbk. — Unit Plant Jakarta</div>
+          <div data-om-id="d44bb400:om-div-67" class="entry-loc"><span data-om-id="d44bb400:om-span-43" data-om-text-id="txt:index.html:60216:60219" class="loc-pin">◉</span> East Jakarta, DKI Jakarta, Indonesia</div>
+          <div data-om-id="d44bb400:om-div-68" data-om-text-id="txt:index.html:60304:60353" class="entry-role">Quality Assurance Internship · Technical Support</div>
+          <div data-om-id="d44bb400:om-div-69" data-om-text-id="txt:index.html:60394:60410" class="entry-date">Sep — Oct 2025</div>
+        </div>
+        <div data-om-id="d44bb400:om-div-70" class="entry-right">
+          <img data-om-id="d44bb400:om-img-6" class="card-logo card-logo-lg on-dark-invert" src="Assets/kaef.png" alt="Kimia Farma logo">
+        </div>
+      </div>
+      <div data-om-id="d44bb400:om-div-71" class="entry-body">
+        <ul data-om-id="d44bb400:om-ul-1">
+          <li data-om-id="d44bb400:om-li-1">Supported comparative dissolution testing and pharmaceutical quality evaluation using <b data-om-id="d44bb400:om-b-5" data-om-text-id="txt:index.html:60741:60745">HPLC</b> and <b data-om-id="d44bb400:om-b-6" data-om-text-id="txt:index.html:60757:60776">UV-Vis spectroscopy</b>.</li>
+          <li data-om-id="d44bb400:om-li-2" data-om-text-id="txt:index.html:60801:60918">Ensured sterile manufacturing operations and quality control systems for injectable and oral pharmaceutical products.</li>
+          <li data-om-id="d44bb400:om-li-3" data-om-text-id="txt:index.html:60938:61075">Organized pharmaceutical equipment inventory data entry and updated digital records in accordance with internal documentation procedures.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-72" class="entry">
+      <div data-om-id="d44bb400:om-div-73" class="entry-head">
+        <div data-om-id="d44bb400:om-div-74" class="entry-left">
+          <div data-om-id="d44bb400:om-div-75" data-om-text-id="txt:index.html:61241:61293" class="entry-org">Community Services — Community Empowerment Program</div>
+          <div data-om-id="d44bb400:om-div-76" class="entry-loc"><span data-om-id="d44bb400:om-span-44" data-om-text-id="txt:index.html:61355:61358" class="loc-pin">◉</span> Banyuwangi, East Java, Indonesia</div>
+          <div data-om-id="d44bb400:om-div-77" data-om-text-id="txt:index.html:61439:61478" class="entry-role">Staff of Logistics & Equipment Division</div>
+          <div data-om-id="d44bb400:om-div-78" data-om-text-id="txt:index.html:61519:61527" class="entry-date">Jul 2024</div>
+        </div>
+        <div data-om-id="d44bb400:om-div-79" class="entry-right">
+          <img data-om-id="d44bb400:om-img-7" class="card-logo card-logo-lg" src="Assets/kkn.png" alt="KKN BBK 4 UNAIR logo">
+        </div>
+      </div>
+      <div data-om-id="d44bb400:om-div-80" class="entry-body">
+        <ul data-om-id="d44bb400:om-ul-2">
+          <li data-om-id="d44bb400:om-li-4" data-om-text-id="txt:index.html:61757:61895">Managed logistics operations — inventory control, equipment distribution, and asset tracking across multiple community service projects.</li>
+          <li data-om-id="d44bb400:om-li-5" data-om-text-id="txt:index.html:61915:62058">Executed community service projects focused on education, environmental sustainability, public health, and economic empowerment in rural areas.</li>
+          <li data-om-id="d44bb400:om-li-6" data-om-text-id="txt:index.html:62078:62218">Delivered workshops on digital literacy, parenting, and stunting prevention while collaborating with local schools and village stakeholders.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== §02 EDUCATION ==================== -->
+  <section data-om-id="d44bb400:om-section-2" id="education" class="reveal">
+    <div data-om-id="d44bb400:om-div-81" class="sec-head">
+      <div data-om-id="d44bb400:om-div-82"><div data-om-id="d44bb400:om-div-83" data-om-text-id="txt:index.html:62445:62462" class="sec-num">§ 02 / Education</div><h2 data-om-id="d44bb400:om-h2-2" class="sec-title">Full academic <span data-om-id="d44bb400:om-span-45" data-om-text-id="txt:index.html:62521:62528" class="em">journey</span></h2></div>
+      <div data-om-id="d44bb400:om-div-84" data-om-text-id="txt:index.html:62575:62618" class="sec-meta">7 records · Undergraduate → Kindergarten</div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-85" class="edu-timeline">
+      <div data-om-id="d44bb400:om-div-86" class="edu-item">
+        <span data-om-id="d44bb400:om-span-46" data-om-text-id="txt:index.html:62726:62763" class="e-tier">S1 — Bachelor's Degree · Indonesia</span>
+        <div data-om-id="d44bb400:om-div-87" class="e-head">
+          <div data-om-id="d44bb400:om-div-88" class="edu-left">
+            <div data-om-id="d44bb400:om-div-89" data-om-text-id="txt:index.html:62865:62885" class="e-inst">Airlangga University</div>
+            <div data-om-id="d44bb400:om-div-90" class="e-loc"><span data-om-id="d44bb400:om-span-47" data-om-text-id="txt:index.html:62945:62948" class="loc-pin">◉</span> Surabaya, East Java</div>
+            <div data-om-id="d44bb400:om-div-91" data-om-text-id="txt:index.html:63014:63091" class="e-desc">Bachelor of Engineering (S.T.), Nanotechnology Engineering · GPA 3.32 / 4.00</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-92" class="edu-right">
+            <img data-om-id="d44bb400:om-img-8" class="card-logo" src="Assets/unair.png" alt="Universitas Airlangga logo">
+            <div data-om-id="d44bb400:om-div-93" data-om-text-id="txt:index.html:63266:63287" class="e-date">Sep 2021 — Feb 2026</div>
+          </div>
+        </div>
+        <small data-om-id="d44bb400:om-small-1" data-om-text-id="txt:index.html:63355:63413" class="e-sub">Faculty of Advanced Technology and Multidiscipline (FTMM).</small>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-94" class="edu-item">
+        <span data-om-id="d44bb400:om-span-48" data-om-text-id="txt:index.html:63494:63525" class="e-tier">Senior High School · Indonesia</span>
+        <div data-om-id="d44bb400:om-div-95" class="e-head">
+          <div data-om-id="d44bb400:om-div-96" class="edu-left">
+            <div data-om-id="d44bb400:om-div-97" data-om-text-id="txt:index.html:63627:63660" class="e-inst">SMA Dwiwarna Boarding High School</div>
+            <div data-om-id="d44bb400:om-div-98" class="e-loc"><span data-om-id="d44bb400:om-span-49" data-om-text-id="txt:index.html:63720:63723" class="loc-pin">◉</span> Bogor, West Java</div>
+            <div data-om-id="d44bb400:om-div-99" data-om-text-id="txt:index.html:63786:63838" class="e-desc">Mathematics & Natural Science · Diploma 88.33 / 100</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-100" class="edu-right">
+            <img data-om-id="d44bb400:om-img-9" class="card-logo" src="Assets/dw.png" alt="SMA Dwiwarna logo">
+            <div data-om-id="d44bb400:om-div-101" data-om-text-id="txt:index.html:64001:64022" class="e-date">Jul 2018 — Jun 2021</div>
+          </div>
+        </div>
+        <small data-om-id="d44bb400:om-small-2" data-om-text-id="txt:index.html:64090:64170" class="e-sub">Islamic boarding school education focusing on character building and leadership.</small>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-102" class="edu-item">
+        <span data-om-id="d44bb400:om-span-50" data-om-text-id="txt:index.html:64251:64285" class="e-tier">Student Exchange Program — Japan</span>
+        <div data-om-id="d44bb400:om-div-103" class="e-head">
+          <div data-om-id="d44bb400:om-div-104" class="edu-left">
+            <div data-om-id="d44bb400:om-div-105" data-om-text-id="txt:index.html:64387:64421" class="e-inst">Morioka Chuo High School — Japan</div>
+            <div data-om-id="d44bb400:om-div-106" class="e-loc"><span data-om-id="d44bb400:om-span-51" data-om-text-id="txt:index.html:64481:64484" class="loc-pin">◉</span> Morioka, Iwate, Japan</div>
+            <div data-om-id="d44bb400:om-div-107" data-om-text-id="txt:index.html:64552:64608" class="e-desc">Intensive Japanese Language & Cultural Immersion Program</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-108" class="edu-right">
+            <img data-om-id="d44bb400:om-img-10" class="card-logo" src="Assets/moriokachuo.png" alt="Morioka Chuo High School logo">
+            <div data-om-id="d44bb400:om-div-109" data-om-text-id="txt:index.html:64792:64800" class="e-date">Feb 2019</div>
+          </div>
+        </div>
+        <small data-om-id="d44bb400:om-small-3" data-om-text-id="txt:index.html:64868:64910" class="e-sub">Sister-School Exchange Program & Homestay.</small>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-110" class="edu-item">
+        <span data-om-id="d44bb400:om-span-52" data-om-text-id="txt:index.html:64991:65022" class="e-tier">Junior High School · Indonesia</span>
+        <div data-om-id="d44bb400:om-div-111" class="e-head">
+          <div data-om-id="d44bb400:om-div-112" class="edu-left">
+            <div data-om-id="d44bb400:om-div-113" data-om-text-id="txt:index.html:65124:65139" class="e-inst">SMPN 19 Jakarta</div>
+            <div data-om-id="d44bb400:om-div-114" class="e-loc"><span data-om-id="d44bb400:om-span-53" data-om-text-id="txt:index.html:65199:65202" class="loc-pin">◉</span> South Jakarta, DKI Jakarta</div>
+            <div data-om-id="d44bb400:om-div-115" data-om-text-id="txt:index.html:65275:65355" class="e-desc">Junior High School Diploma · Final Grade 83.01 / 100 · National Exam 339 / 400</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-116" class="edu-right">
+            <img data-om-id="d44bb400:om-img-11" class="card-logo" src="Assets/smpn19.png" alt="SMPN 19 Jakarta logo">
+            <div data-om-id="d44bb400:om-div-117" data-om-text-id="txt:index.html:65525:65546" class="e-date">Jul 2015 — Jun 2018</div>
+          </div>
+        </div>
+        <small data-om-id="d44bb400:om-small-4" data-om-text-id="txt:index.html:65614:65674" class="e-sub">Active in Taekwondo, Scouts, Swimming, English & Math Clubs.</small>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-118" class="edu-item">
+        <span data-om-id="d44bb400:om-span-54" data-om-text-id="txt:index.html:65755:65785" class="e-tier">Elementary School · Indonesia</span>
+        <div data-om-id="d44bb400:om-div-119" class="e-head">
+          <div data-om-id="d44bb400:om-div-120" class="edu-left">
+            <div data-om-id="d44bb400:om-div-121" data-om-text-id="txt:index.html:65887:65907" class="e-inst">SD Islam Harapan Ibu</div>
+            <div data-om-id="d44bb400:om-div-122" class="e-loc"><span data-om-id="d44bb400:om-span-55" data-om-text-id="txt:index.html:65967:65970" class="loc-pin">◉</span> South Jakarta, DKI Jakarta</div>
+            <div data-om-id="d44bb400:om-div-123" data-om-text-id="txt:index.html:66043:66089" class="e-desc">Elementary Education · Final Grade 85.8 / 100</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-124" class="edu-right">
+            <img data-om-id="d44bb400:om-img-12" class="card-logo" src="Assets/sdhi.png" alt="SD Islam Harapan Ibu logo">
+            <div data-om-id="d44bb400:om-div-125" data-om-text-id="txt:index.html:66262:66283" class="e-date">Apr 2010 — Jun 2015</div>
+          </div>
+        </div>
+        <small data-om-id="d44bb400:om-small-5" data-om-text-id="txt:index.html:66351:66416" class="e-sub">Cultural readaptation and Islamic character-building environment.</small>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-126" class="edu-item">
+        <span data-om-id="d44bb400:om-span-56" data-om-text-id="txt:index.html:66497:66525" class="e-tier">Primary School — Singapore</span>
+        <div data-om-id="d44bb400:om-div-127" class="e-head">
+          <div data-om-id="d44bb400:om-div-128" class="edu-left">
+            <div data-om-id="d44bb400:om-div-129" data-om-text-id="txt:index.html:66627:66670" class="e-inst">Balestier Hill Primary School — Singapore</div>
+            <div data-om-id="d44bb400:om-div-130" class="e-loc"><span data-om-id="d44bb400:om-span-57" data-om-text-id="txt:index.html:66730:66733" class="loc-pin">◉</span> Balestier Rd, Central Singapore</div>
+            <div data-om-id="d44bb400:om-div-131" data-om-text-id="txt:index.html:66811:66866" class="e-desc">Overseas international study & multicultural immersion.</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-132" class="edu-right">
+            <img data-om-id="d44bb400:om-img-13" class="card-logo" src="Assets/balestierhillpri.png" alt="Balestier Hill Primary School logo">
+            <div data-om-id="d44bb400:om-div-133" data-om-text-id="txt:index.html:67060:67076" class="e-date">Jan — Apr 2010</div>
+          </div>
+        </div>
+        <small data-om-id="d44bb400:om-small-6" data-om-text-id="txt:index.html:67144:67246" class="e-sub">First formal English-medium schooling — foundation for multilingual and cross-cultural adaptability.</small>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-134" class="edu-item">
+        <span data-om-id="d44bb400:om-span-58" data-om-text-id="txt:index.html:67327:67353" class="e-tier">Kindergarten — Singapore</span>
+        <div data-om-id="d44bb400:om-div-135" class="e-head">
+          <div data-om-id="d44bb400:om-div-136" class="edu-left">
+            <div data-om-id="d44bb400:om-div-137" data-om-text-id="txt:index.html:67455:67500" class="e-inst">Al-Amin Pre-School Kindergarten — Singapore</div>
+            <div data-om-id="d44bb400:om-div-138" class="e-loc"><span data-om-id="d44bb400:om-span-59" data-om-text-id="txt:index.html:67560:67563" class="loc-pin">◉</span> Telok Blangah Way, Singapore</div>
+            <div data-om-id="d44bb400:om-div-139" data-om-text-id="txt:index.html:67638:67698" class="e-desc">Early Childhood Education · Early multicultural foundation.</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-140" class="edu-right">
+            <img data-om-id="d44bb400:om-img-14" class="card-logo" src="Assets/al-amin.png" alt="Masjid Al-Amin logo">
+            <div data-om-id="d44bb400:om-div-141" data-om-text-id="txt:index.html:67868:67889" class="e-date">Jul 2007 — Nov 2009</div>
+          </div>
+        </div>
+        <small data-om-id="d44bb400:om-small-7" data-om-text-id="txt:index.html:67957:68084" class="e-sub">Earliest exposure to a bilingual (English, Malay, Chinese &amp; Hindi) learning environment and community-based Islamic values.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== §03 LEADERSHIP ==================== -->
+  <section data-om-id="d44bb400:om-section-3" id="leadership" class="reveal">
+    <div data-om-id="d44bb400:om-div-142" class="sec-head">
+      <div data-om-id="d44bb400:om-div-143"><div data-om-id="d44bb400:om-div-144" data-om-text-id="txt:index.html:68302:68320" class="sec-num">§ 03 / Leadership</div><h2 data-om-id="d44bb400:om-h2-3" class="sec-title">Early <span data-om-id="d44bb400:om-span-60" data-om-text-id="txt:index.html:68371:68381" class="em">organizing</span></h2></div>
+      <div data-om-id="d44bb400:om-div-145" data-om-text-id="txt:index.html:68428:68437" class="sec-meta">2 records</div>
+    </div>
+    <div data-om-id="d44bb400:om-div-146" class="two-col">
+      <div data-om-id="d44bb400:om-div-147" class="entry research-card" style="border-bottom:1px solid var(--line-2)"><span data-om-id="d44bb400:om-span-61" class="r-edge-l"></span><span data-om-id="d44bb400:om-span-62" class="r-edge-r"></span>
+        <div data-om-id="d44bb400:om-div-148" class="entry-head">
+          <div data-om-id="d44bb400:om-div-149" class="entry-left">
+            <div data-om-id="d44bb400:om-div-150" data-om-text-id="txt:index.html:68730:68752" class="entry-org">Festival Dwiwarna 2020</div>
+            <div data-om-id="d44bb400:om-div-151" data-om-text-id="txt:index.html:68795:68826" class="entry-role">Head of Mathematics Competition</div>
+            <div data-om-id="d44bb400:om-div-152" data-om-text-id="txt:index.html:68869:68890" class="entry-date">Jul 2019 — Feb 2020</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-153" class="entry-right">
+            <img data-om-id="d44bb400:om-img-15" class="card-logo" src="Assets/fdw2020.png" alt="Festival Dwiwarna 2020 logo">
+          </div>
+        </div>
+        <div data-om-id="d44bb400:om-div-154" class="entry-body">
+          <ul data-om-id="d44bb400:om-ul-3">
+            <li data-om-id="d44bb400:om-li-7" data-om-text-id="txt:index.html:69134:69254">Directed the overall Math Competition — event planning, judging, scoring, and coordination with participating schools.</li>
+            <li data-om-id="d44bb400:om-li-8" data-om-text-id="txt:index.html:69276:69376">Oversaw budgeting and operations: logistics, prize allocation, registration, and technical briefing.</li>
+          </ul>
+        </div>
+      </div>
+      <div data-om-id="d44bb400:om-div-155" class="entry research-card" style="border-bottom:1px solid var(--line-2)"><span data-om-id="d44bb400:om-span-63" class="r-edge-l"></span><span data-om-id="d44bb400:om-span-64" class="r-edge-r"></span>
+        <div data-om-id="d44bb400:om-div-156" class="entry-head">
+          <div data-om-id="d44bb400:om-div-157" class="entry-left">
+            <div data-om-id="d44bb400:om-div-158" data-om-text-id="txt:index.html:69675:69689" class="entry-org">ROHIS Dwiwarna</div>
+            <div data-om-id="d44bb400:om-div-159" data-om-text-id="txt:index.html:69732:69766" class="entry-role">Head of Mosque Prosperity Division</div>
+            <div data-om-id="d44bb400:om-div-160" data-om-text-id="txt:index.html:69809:69830" class="entry-date">Jul 2019 — Feb 2020</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-161" class="entry-right">
+            <img data-om-id="d44bb400:om-img-16" class="card-logo" src="Assets/rohisdw.png" alt="ROHIS Dwiwarna logo">
+          </div>
+        </div>
+        <div data-om-id="d44bb400:om-div-162" class="entry-body">
+          <ul data-om-id="d44bb400:om-ul-4">
+            <li data-om-id="d44bb400:om-li-9" data-om-text-id="txt:index.html:70066:70182">Managed mosque operations and facilities — cleanliness, maintenance, supportive environment for worship and study.</li>
+            <li data-om-id="d44bb400:om-li-10" data-om-text-id="txt:index.html:70204:70313">Coordinated religious and community programs across divisions — events, study circles, service initiatives.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== §04 RESEARCH ==================== -->
+  <section data-om-id="d44bb400:om-section-4" id="research" class="reveal">
+    <div data-om-id="d44bb400:om-div-163" class="sec-head">
+      <div data-om-id="d44bb400:om-div-164"><div data-om-id="d44bb400:om-div-165" data-om-text-id="txt:index.html:70555:70571" class="sec-num">§ 04 / Research</div><h2 data-om-id="d44bb400:om-h2-4" class="sec-title">Bench <span data-om-id="d44bb400:om-span-65" data-om-text-id="txt:index.html:70622:70626" class="em">work</span></h2></div>
+      <div data-om-id="d44bb400:om-div-166" data-om-text-id="txt:index.html:70673:70682" class="sec-meta">2 records</div>
+    </div>
+    <div data-om-id="d44bb400:om-div-167" class="two-col">
+      <div data-om-id="d44bb400:om-div-168" class="entry research-card"><span data-om-id="d44bb400:om-span-66" class="r-edge-l"></span><span data-om-id="d44bb400:om-span-67" class="r-edge-r"></span>
+        <div data-om-id="d44bb400:om-div-169" class="entry-head">
+          <div data-om-id="d44bb400:om-div-170" data-om-text-id="txt:index.html:70892:70904" class="entry-org">ICY-AM Resin</div>
+          <div data-om-id="d44bb400:om-div-171" data-om-text-id="txt:index.html:70945:70961" class="entry-date">Mar — Dec 2025</div>
+        </div>
+        <div data-om-id="d44bb400:om-div-172" data-om-text-id="txt:index.html:71015:71035" class="entry-role">Undergraduate Thesis</div>
+        <div data-om-id="d44bb400:om-div-173" class="entry-body">
+          <p data-om-id="d44bb400:om-p-2"><b data-om-id="d44bb400:om-b-7" data-om-text-id="txt:index.html:71091:71190">“The Effectiveness of Hyper-Cross-Linked Polymeric Resin (ICY-AM) for Tetracycline Adsorption.”</b></p>
+          <p data-om-id="d44bb400:om-p-3" data-om-text-id="txt:index.html:71236:71475" style="margin-top:10px">Developed and evaluated a newly invented Isocyanurate-aminoethylamine (ICY-AM) resin for the adsorption of tetracycline, an emerging water pollutant. Demonstrated potential as an environmentally friendly adsorbent for wastewater treatment.</p>
+        </div>
+      </div>
+      <div data-om-id="d44bb400:om-div-174" class="entry research-card"><span data-om-id="d44bb400:om-span-68" class="r-edge-l"></span><span data-om-id="d44bb400:om-span-69" class="r-edge-r"></span>
+        <div data-om-id="d44bb400:om-div-175" class="entry-head">
+          <div data-om-id="d44bb400:om-div-176" data-om-text-id="txt:index.html:71674:71695" class="entry-org">Evybactin — Anti-TB</div>
+          <div data-om-id="d44bb400:om-div-177" data-om-text-id="txt:index.html:71736:71752" class="entry-date">Aug — Dec 2023</div>
+        </div>
+        <div data-om-id="d44bb400:om-div-178" data-om-text-id="txt:index.html:71806:71836" class="entry-role">Nanocomputing Research Project</div>
+        <div data-om-id="d44bb400:om-div-179" class="entry-body">
+          <p data-om-id="d44bb400:om-p-4">Developed and evaluated <b data-om-id="d44bb400:om-b-8" data-om-text-id="txt:index.html:71916:71925">Evybactin</b> as a potential anti-tuberculosis drug candidate through in silico studies — molecular docking and molecular dynamics simulations — targeting DNA Gyrase A of <i data-om-id="d44bb400:om-i-3" data-om-text-id="txt:index.html:72094:72120">Mycobacterium tuberculosis</i>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== §05 PROJECTS ==================== -->
+  <section data-om-id="d44bb400:om-section-5" id="projects" class="reveal">
+    <div data-om-id="d44bb400:om-div-180" class="sec-head">
+      <div data-om-id="d44bb400:om-div-181"><div data-om-id="d44bb400:om-div-182" data-om-text-id="txt:index.html:72350:72366" class="sec-num">§ 05 / Projects</div><h2 data-om-id="d44bb400:om-h2-5" class="sec-title">Works &amp; <span data-om-id="d44bb400:om-span-70" data-om-text-id="txt:index.html:72423:72433" class="em">prototypes</span></h2></div>
+      <div data-om-id="d44bb400:om-div-183" data-om-text-id="txt:index.html:72480:72512" class="sec-meta">10 records · Swipe / scroll →</div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-184" class="projects-wrap">
+      <div data-om-id="d44bb400:om-div-185" class="projects-controls">
+        <button data-om-id="d44bb400:om-button-4" data-om-text-id="txt:index.html:72680:72683" class="proj-arrow" id="projPrev" aria-label="Previous project">←</button>
+        <button data-om-id="d44bb400:om-button-5" data-om-text-id="txt:index.html:72768:72771" class="proj-arrow" id="projNext" aria-label="Next project">→</button>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-186" class="projects-scroll" id="projectsScroll">
+        <article data-om-id="d44bb400:om-article-1" class="proj-card">
+          <div data-om-id="d44bb400:om-div-187" data-om-text-id="txt:index.html:72916:72929" class="p-num">Project · 01</div>
+          <div data-om-id="d44bb400:om-div-188" data-om-text-id="txt:index.html:72967:72996" class="p-title">Portfolio &amp; Personal Site</div>
+          <div data-om-id="d44bb400:om-div-189" data-om-text-id="txt:index.html:73036:73235" class="p-summary">This site — a lightweight single-page portfolio built with prototyping a terminal / nanotech design language. Custom sticky navigation, light/dark theme system, and visually interactive components.</div>
+          <div data-om-id="d44bb400:om-div-190" class="p-tags">
+            <span data-om-id="d44bb400:om-span-71" data-om-text-id="txt:index.html:73305:73313" class="p-tag">HTML/CSS</span>
+            <span data-om-id="d44bb400:om-span-72" data-om-text-id="txt:index.html:73353:73358" class="p-tag">UI/UX</span>
+            <span data-om-id="d44bb400:om-span-73" data-om-text-id="txt:index.html:73398:73411" class="p-tag">Design System</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-14" data-om-text-id="txt:index.html:73480:73496" class="p-link" href="#profile">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-2" class="proj-card">
+          <div data-om-id="d44bb400:om-div-191" data-om-text-id="txt:index.html:73586:73599" class="p-num">Project · 02</div>
+          <div data-om-id="d44bb400:om-div-192" data-om-text-id="txt:index.html:73637:73664" class="p-title">ICY-AM Adsorption Prototype</div>
+          <div data-om-id="d44bb400:om-div-193" data-om-text-id="txt:index.html:73704:73900" class="p-summary">Bench-scale evaluation of a hyper-cross-linked Isocyanurate-aminoethylamine resin for removing tetracycline from wastewater. Batch adsorption tests, kinetics modelling, and reusability assessment.</div>
+          <div data-om-id="d44bb400:om-div-194" class="p-tags">
+            <span data-om-id="d44bb400:om-span-74" data-om-text-id="txt:index.html:73970:73978" class="p-tag">Nanotech</span>
+            <span data-om-id="d44bb400:om-span-75" data-om-text-id="txt:index.html:74018:74028" class="p-tag">Wastewater</span>
+            <span data-om-id="d44bb400:om-span-76" data-om-text-id="txt:index.html:74068:74077" class="p-tag">OriginPro</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-15" data-om-text-id="txt:index.html:74203:74219" class="p-link" href="https://canva.link/pgvn8bshme46mh3" target="_blank" rel="noopener">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-3" class="proj-card">
+          <div data-om-id="d44bb400:om-div-195" data-om-text-id="txt:index.html:74309:74322" class="p-num">Project · 03</div>
+          <div data-om-id="d44bb400:om-div-196" data-om-text-id="txt:index.html:74360:74385" class="p-title">Evybactin In-Silico Study</div>
+          <div data-om-id="d44bb400:om-div-197" class="p-summary">Molecular docking &amp; dynamics simulation targeting DNA Gyrase A of <i data-om-id="d44bb400:om-i-4" data-om-text-id="txt:index.html:74498:74513">M. tuberculosis</i>. Binding-affinity ranking, RMSD/RMSF analysis, and residue-interaction mapping.</div>
+          <div data-om-id="d44bb400:om-div-198" class="p-tags">
+            <span data-om-id="d44bb400:om-span-77" data-om-text-id="txt:index.html:74667:74678" class="p-tag">Drug Design</span>
+            <span data-om-id="d44bb400:om-span-78" data-om-text-id="txt:index.html:74718:74725" class="p-tag">Chimera</span>
+            <span data-om-id="d44bb400:om-span-79" data-om-text-id="txt:index.html:74765:74770" class="p-tag">Dock6</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-16" data-om-text-id="txt:index.html:74840:74856" class="p-link" href="#research">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-4" class="proj-card">
+          <div data-om-id="d44bb400:om-div-199" data-om-text-id="txt:index.html:74946:74959" class="p-num">Project · 04</div>
+          <div data-om-id="d44bb400:om-div-200" data-om-text-id="txt:index.html:74997:75040" class="p-title">Kopi Nusantara — Coffee Shop Landing Page</div>
+          <div data-om-id="d44bb400:om-div-201" data-om-text-id="txt:index.html:75080:75366" class="p-summary">Modern, responsive coffee shop landing page built using Lovable AI prompt engineering during MySkill Short Class AI &amp; Automation. Features a hero showcase, about section, interactive menu preview, customer testimonials, table ordering feature, and direct WhatsApp order dispatching.</div>
+          <div data-om-id="d44bb400:om-div-202" class="p-tags">
+            <span data-om-id="d44bb400:om-span-80" data-om-text-id="txt:index.html:75436:75446" class="p-tag">Lovable AI</span>
+            <span data-om-id="d44bb400:om-span-81" data-om-text-id="txt:index.html:75486:75501" class="p-tag">Prompt Engineer</span>
+            <span data-om-id="d44bb400:om-span-82" data-om-text-id="txt:index.html:75541:75555" class="p-tag">AI Prototyping</span>
+            <span data-om-id="d44bb400:om-span-83" data-om-text-id="txt:index.html:75595:75600" class="p-tag">UI/UX</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-17" data-om-text-id="txt:index.html:75746:75762" class="p-link" href="https://preview--desk-order-kopinusantara.lovable.app/" target="_blank" rel="noopener">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-5" class="proj-card">
+          <div data-om-id="d44bb400:om-div-203" data-om-text-id="txt:index.html:75852:75865" class="p-num">Project · 05</div>
+          <div data-om-id="d44bb400:om-div-204" data-om-text-id="txt:index.html:75903:75934" class="p-title">Expense &amp; Budget Visualizer</div>
+          <div data-om-id="d44bb400:om-div-205" data-om-text-id="txt:index.html:75974:76258" class="p-summary">Client-side expense tracking web application built during RevoU Software Engineering Coding Camp. Features dynamic transaction logging, category spending distribution visualization via Chart.js, spending threshold alerts, persistent Local Storage data retention, and dark mode toggle.</div>
+          <div data-om-id="d44bb400:om-div-206" class="p-tags">
+            <span data-om-id="d44bb400:om-span-84" data-om-text-id="txt:index.html:76328:76338" class="p-tag">Vanilla JS</span>
+            <span data-om-id="d44bb400:om-span-85" data-om-text-id="txt:index.html:76378:76386" class="p-tag">Chart.js</span>
+            <span data-om-id="d44bb400:om-span-86" data-om-text-id="txt:index.html:76426:76434" class="p-tag">HTML/CSS</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-18" data-om-text-id="txt:index.html:76596:76612" class="p-link" href="https://raziowizard.github.io/CodingCamp-6July26-Yoshio-Faris-Makarim/" target="_blank" rel="noopener">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-6" class="proj-card">
+          <div data-om-id="d44bb400:om-div-207" data-om-text-id="txt:index.html:76702:76715" class="p-num">Project · 06</div>
+          <div data-om-id="d44bb400:om-div-208" data-om-text-id="txt:index.html:76753:76793" class="p-title">SME Marketing Content Generator Workflow</div>
+          <div data-om-id="d44bb400:om-div-209" data-om-text-id="txt:index.html:76833:77099" class="p-summary">Automated AI marketing content workflow built on Gemini Opal for Hacktiv8 Maju Bareng AI. Concurrently processes marketing objectives, target demographics, and Call-to-Action parameters to output Instagram captions and 9:16 visual poster prompts in under 10 seconds.</div>
+          <div data-om-id="d44bb400:om-div-210" class="p-tags">
+            <span data-om-id="d44bb400:om-span-87" data-om-text-id="txt:index.html:77169:77180" class="p-tag">Gemini Opal</span>
+            <span data-om-id="d44bb400:om-span-88" data-om-text-id="txt:index.html:77220:77231" class="p-tag">AI Workflow</span>
+            <span data-om-id="d44bb400:om-span-89" data-om-text-id="txt:index.html:77271:77286" class="p-tag">Prompt Engineer</span>
+            <span data-om-id="d44bb400:om-span-90" data-om-text-id="txt:index.html:77326:77336" class="p-tag">Automation</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-19" data-om-text-id="txt:index.html:77485:77501" class="p-link" href="https://opal.google/app/1wRKCeoKIC7olyrvcEo8zzjSc1vbtV-dA" target="_blank" rel="noopener">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-7" class="proj-card">
+          <div data-om-id="d44bb400:om-div-211" data-om-text-id="txt:index.html:77591:77604" class="p-num">Project · 07</div>
+          <div data-om-id="d44bb400:om-div-212" data-om-text-id="txt:index.html:77642:77685" class="p-title">MySkill Upskilling &amp; Mini Portfolio Hub</div>
+          <div data-om-id="d44bb400:om-div-213" data-om-text-id="txt:index.html:77725:77999" class="p-summary">Digital repository documenting continuous learning and hands-on execution across 20+ MySkill Short Class domains — including AI, Data Analysis, Digital Marketing, Product &amp; Project Management, UI/UX Design, HR, Finance, Microsoft Excel, Software Engineering, and more.</div>
+          <div data-om-id="d44bb400:om-div-214" class="p-tags">
+            <span data-om-id="d44bb400:om-span-91" data-om-text-id="txt:index.html:78069:78079" class="p-tag">Upskilling</span>
+            <span data-om-id="d44bb400:om-span-92" data-om-text-id="txt:index.html:78119:78138" class="p-tag">20+ Mini Portfolios</span>
+            <span data-om-id="d44bb400:om-span-93" data-om-text-id="txt:index.html:78178:78197" class="p-tag">Continuous Learning</span>
+            <span data-om-id="d44bb400:om-span-94" data-om-text-id="txt:index.html:78237:78253" class="p-tag">Cross-Functional</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-20" data-om-text-id="txt:index.html:78370:78386" class="p-link" href="https://x.com/Raziowizard" target="_blank" rel="noopener">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-8" class="proj-card">
+          <div data-om-id="d44bb400:om-div-215" data-om-text-id="txt:index.html:78476:78489" class="p-num">Project · 08</div>
+          <div data-om-id="d44bb400:om-div-216" data-om-text-id="txt:index.html:78527:78551" class="p-title">Dissolution QC Dashboard</div>
+          <div data-om-id="d44bb400:om-div-217" data-om-text-id="txt:index.html:78591:78765" class="p-summary">Sample dashboard prototype for comparative dissolution testing at Kimia Farma — batch tracking, HPLC/UV-Vis result comparison, and pass/fail visualisation for QA reviewers.</div>
+          <div data-om-id="d44bb400:om-div-218" class="p-tags">
+            <span data-om-id="d44bb400:om-span-95" data-om-text-id="txt:index.html:78835:78845" class="p-tag">QA Testing</span>
+            <span data-om-id="d44bb400:om-span-96" data-om-text-id="txt:index.html:78885:78898" class="p-tag">Data Analysis</span>
+            <span data-om-id="d44bb400:om-span-97" data-om-text-id="txt:index.html:78938:78946" class="p-tag">Power BI</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-21" data-om-text-id="txt:index.html:79018:79034" class="p-link" href="#experience">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-9" class="proj-card">
+          <div data-om-id="d44bb400:om-div-219" data-om-text-id="txt:index.html:79124:79137" class="p-num">Project · 09</div>
+          <div data-om-id="d44bb400:om-div-220" data-om-text-id="txt:index.html:79175:79203" class="p-title">Inventory Digitization Sheet</div>
+          <div data-om-id="d44bb400:om-div-221" data-om-text-id="txt:index.html:79243:79409" class="p-summary">Excel + SQL-based inventory template designed for pharmaceutical equipment tracking — standardises data entry, flags expired items, and exports audit-ready records.</div>
+          <div data-om-id="d44bb400:om-div-222" class="p-tags">
+            <span data-om-id="d44bb400:om-span-98" data-om-text-id="txt:index.html:79479:79484" class="p-tag">Excel</span>
+            <span data-om-id="d44bb400:om-span-99" data-om-text-id="txt:index.html:79524:79527" class="p-tag">SQL</span>
+            <span data-om-id="d44bb400:om-span-100" data-om-text-id="txt:index.html:79567:79586" class="p-tag">Process Improvement</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-22" data-om-text-id="txt:index.html:79658:79674" class="p-link" href="#experience">View Project ↗</a>
+        </article>
+
+        <article data-om-id="d44bb400:om-article-10" class="proj-card">
+          <div data-om-id="d44bb400:om-div-223" data-om-text-id="txt:index.html:79764:79777" class="p-num">Project · 10</div>
+          <div data-om-id="d44bb400:om-div-224" data-om-text-id="txt:index.html:79815:79840" class="p-title">Community Program Toolkit</div>
+          <div data-om-id="d44bb400:om-div-225" data-om-text-id="txt:index.html:79880:80056" class="p-summary">Workshop &amp; logistics toolkit for the Community Empowerment Program — session decks on digital literacy, parenting, and stunting prevention, plus asset-tracking templates.</div>
+          <div data-om-id="d44bb400:om-div-226" class="p-tags">
+            <span data-om-id="d44bb400:om-span-101" data-om-text-id="txt:index.html:80126:80131" class="p-tag">UI/UX</span>
+            <span data-om-id="d44bb400:om-span-102" data-om-text-id="txt:index.html:80171:80176" class="p-tag">Canva</span>
+            <span data-om-id="d44bb400:om-span-103" data-om-text-id="txt:index.html:80216:80221" class="p-tag">Figma</span>
+          </div>
+          <a data-om-id="d44bb400:om-a-23" data-om-text-id="txt:index.html:80293:80309" class="p-link" href="#experience">View Project ↗</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== §06 SKILLS ==================== -->
+  <section data-om-id="d44bb400:om-section-6" id="skills" class="reveal">
+    <div data-om-id="d44bb400:om-div-227" class="sec-head">
+      <div data-om-id="d44bb400:om-div-228"><div data-om-id="d44bb400:om-div-229" data-om-text-id="txt:index.html:80534:80548" class="sec-num">§ 06 / Skills</div><h2 data-om-id="d44bb400:om-h2-6" class="sec-title">Technical <span data-om-id="d44bb400:om-span-104" data-om-text-id="txt:index.html:80603:80611" class="em">toolbelt</span></h2></div>
+      <div data-om-id="d44bb400:om-div-230" data-om-text-id="txt:index.html:80658:80670" class="sec-meta">8 categories</div>
+    </div>
+    <div data-om-id="d44bb400:om-div-231" class="skills">
+      <div data-om-id="d44bb400:om-div-232" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-1" data-om-text-id="txt:index.html:80755:80770">Self-Management</h4>
+        <ul data-om-id="d44bb400:om-ul-5">
+          <li data-om-id="d44bb400:om-li-11" data-om-text-id="txt:index.html:80803:80818">Problem Solving</li>
+          <li data-om-id="d44bb400:om-li-12" data-om-text-id="txt:index.html:80838:80853">Time Management</li>
+          <li data-om-id="d44bb400:om-li-13" data-om-text-id="txt:index.html:80873:80893">Attention to Details</li>
+          <li data-om-id="d44bb400:om-li-14" data-om-text-id="txt:index.html:80913:80939">Computer &amp; AI Literacy</li>
+          <li data-om-id="d44bb400:om-li-15" data-om-text-id="txt:index.html:80959:80990">Reporting &amp; Documentation</li>
+          <li data-om-id="d44bb400:om-li-16" data-om-text-id="txt:index.html:81010:81039">Logical &amp; Critical Thinking</li>
+        </ul>
+      </div>
+      <div data-om-id="d44bb400:om-div-233" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-2" data-om-text-id="txt:index.html:81114:81139">Interpersonal Team Skills</h4>
+        <ul data-om-id="d44bb400:om-ul-6">
+          <li data-om-id="d44bb400:om-li-17" data-om-text-id="txt:index.html:81172:81200">Teamwork &amp; Collaboration</li>
+          <li data-om-id="d44bb400:om-li-18" data-om-text-id="txt:index.html:81220:81227">Empathy</li>
+          <li data-om-id="d44bb400:om-li-19" data-om-text-id="txt:index.html:81247:81260">Communication</li>
+          <li data-om-id="d44bb400:om-li-20" data-om-text-id="txt:index.html:81280:81296">Active Listening</li>
+          <li data-om-id="d44bb400:om-li-21" data-om-text-id="txt:index.html:81316:81335">Conflict Resolution</li>
+        </ul>
+      </div>
+      <div data-om-id="d44bb400:om-div-234" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-3" data-om-text-id="txt:index.html:81410:81424">Data Analytics</h4>
+        <ul data-om-id="d44bb400:om-ul-7">
+          <li data-om-id="d44bb400:om-li-22" data-om-text-id="txt:index.html:81457:81472">Microsoft Excel</li>
+          <li data-om-id="d44bb400:om-li-23" data-om-text-id="txt:index.html:81492:81495">SQL</li>
+          <li data-om-id="d44bb400:om-li-24" data-om-text-id="txt:index.html:81515:81521">Python</li>
+          <li data-om-id="d44bb400:om-li-25" data-om-text-id="txt:index.html:81541:81550">OriginPro</li>
+          <li data-om-id="d44bb400:om-li-26" data-om-text-id="txt:index.html:81570:81576">ImageJ</li>
+          <li data-om-id="d44bb400:om-li-27" data-om-text-id="txt:index.html:81596:81612">Google Analytics</li>
+        </ul>
+      </div>
+      <div data-om-id="d44bb400:om-div-235" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-4" data-om-text-id="txt:index.html:81687:81705">Data Visualization</h4>
+        <ul data-om-id="d44bb400:om-ul-8">
+          <li data-om-id="d44bb400:om-li-28" data-om-text-id="txt:index.html:81738:81745">Tableau</li>
+          <li data-om-id="d44bb400:om-li-29" data-om-text-id="txt:index.html:81765:81773">Microsoft Power BI</li>
+          <li data-om-id="d44bb400:om-li-30" data-om-text-id="txt:index.html:81793:81818">Google Looker Data Studio</li>
+        </ul>
+      </div>
+      <div data-om-id="d44bb400:om-div-236" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-5" data-om-text-id="txt:index.html:81893:81915">Essential Productivity</h4>
+        <ul data-om-id="d44bb400:om-ul-9">
+          <li data-om-id="d44bb400:om-li-31" data-om-text-id="txt:index.html:81948:81961">Microsoft 365</li>
+          <li data-om-id="d44bb400:om-li-32" data-om-text-id="txt:index.html:81981:81997">Google Workspace</li>
+          <li data-om-id="d44bb400:om-li-33" data-om-text-id="txt:index.html:82017:82048">Microsoft Word (Report Writing)</li>
+          <li data-om-id="d44bb400:om-li-34" data-om-text-id="txt:index.html:82068:82096">Google Drive (Cloud Storage)</li>
+          <li data-om-id="d44bb400:om-li-35" data-om-text-id="txt:index.html:82116:82136">Zoom (Communication)</li>
+          <li data-om-id="d44bb400:om-li-36" data-om-text-id="txt:index.html:82156:82172">n8n (Automation)</li>
+        </ul>
+      </div>
+      <div data-om-id="d44bb400:om-div-237" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-6" data-om-text-id="txt:index.html:82247:82261">Graphic Design</h4>
+        <ul data-om-id="d44bb400:om-ul-10">
+          <li data-om-id="d44bb400:om-li-37" data-om-text-id="txt:index.html:82294:82314">Microsoft PowerPoint</li>
+          <li data-om-id="d44bb400:om-li-38" data-om-text-id="txt:index.html:82334:82339">Canva</li>
+          <li data-om-id="d44bb400:om-li-39" data-om-text-id="txt:index.html:82359:82364">Figma</li>
+        </ul>
+      </div>
+      <div data-om-id="d44bb400:om-div-238" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-7" data-om-text-id="txt:index.html:82439:82455">Molecular Design</h4>
+        <ul data-om-id="d44bb400:om-ul-11">
+          <li data-om-id="d44bb400:om-li-40" data-om-text-id="txt:index.html:82488:82495">Chimera</li>
+          <li data-om-id="d44bb400:om-li-41" data-om-text-id="txt:index.html:82515:82524">HyperChem</li>
+          <li data-om-id="d44bb400:om-li-42" data-om-text-id="txt:index.html:82544:82549">Dock6</li>
+          <li data-om-id="d44bb400:om-li-43" data-om-text-id="txt:index.html:82569:82578">GaussView</li>
+        </ul>
+      </div>
+      <div data-om-id="d44bb400:om-div-239" class="skill-cat">
+        <h4 data-om-id="d44bb400:om-h4-8" data-om-text-id="txt:index.html:82653:82673">Instruments Analysis</h4>
+        <ul data-om-id="d44bb400:om-ul-12">
+          <li data-om-id="d44bb400:om-li-44" data-om-text-id="txt:index.html:82706:82712">UV-Vis</li>
+          <li data-om-id="d44bb400:om-li-45" data-om-text-id="txt:index.html:82732:82736">FTIR</li>
+          <li data-om-id="d44bb400:om-li-46" data-om-text-id="txt:index.html:82756:82759">XRD</li>
+          <li data-om-id="d44bb400:om-li-47" data-om-text-id="txt:index.html:82779:82782">PSA</li>
+          <li data-om-id="d44bb400:om-li-48" data-om-text-id="txt:index.html:82802:82809">SAA-BET</li>
+          <li data-om-id="d44bb400:om-li-49" data-om-text-id="txt:index.html:82829:82836">SEM-EDX</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== §07 LANGUAGES + CERTS ==================== -->
+  <section data-om-id="d44bb400:om-section-7" id="languages" class="reveal">
+    <div data-om-id="d44bb400:om-div-240" class="sec-head">
+      <div data-om-id="d44bb400:om-div-241"><div data-om-id="d44bb400:om-div-242" data-om-text-id="txt:index.html:83071:83109" class="sec-num">§ 07 / Languages &amp; Certifications</div><h2 data-om-id="d44bb400:om-h2-7" class="sec-title">Verified <span data-om-id="d44bb400:om-span-105" data-om-text-id="txt:index.html:83163:83169" class="em">skills</span></h2></div>
+    </div>
+    <div data-om-id="d44bb400:om-div-243" class="two-col">
+      <div data-om-id="d44bb400:om-div-244" style="border:1px solid var(--line-2);background:var(--panel);padding:22px 26px">
+        <div data-om-id="d44bb400:om-div-245" data-om-text-id="txt:index.html:83374:83383" class="sec-num" style="margin-bottom:14px">Languages</div>
+        <div data-om-id="d44bb400:om-div-246" class="lang-row"><span data-om-id="d44bb400:om-span-106" data-om-text-id="txt:index.html:83441:83451" class="l-name">Indonesian</span><span data-om-id="d44bb400:om-span-107" class="l-bar"><i data-om-id="d44bb400:om-i-5" style="width:100%"></i></span><span data-om-id="d44bb400:om-span-108" data-om-text-id="txt:index.html:83533:83543" class="l-level">Proficient</span></div>
+        <div data-om-id="d44bb400:om-div-247" class="lang-row"><span data-om-id="d44bb400:om-span-109" data-om-text-id="txt:index.html:83608:83615" class="l-name">English</span><span data-om-id="d44bb400:om-span-110" class="l-bar"><i data-om-id="d44bb400:om-i-6" style="width:90%"></i></span><span data-om-id="d44bb400:om-span-111" data-om-text-id="txt:index.html:83696:83704" class="l-level">Advanced</span></div>
+        <div data-om-id="d44bb400:om-div-248" class="lang-row"><span data-om-id="d44bb400:om-span-112" data-om-text-id="txt:index.html:83769:83777" class="l-name">Japanese</span><span data-om-id="d44bb400:om-span-113" class="l-bar"><i data-om-id="d44bb400:om-i-7" style="width:65%"></i></span><span data-om-id="d44bb400:om-span-114" data-om-text-id="txt:index.html:83858:83873" class="l-level">Upper-Intermed.</span></div>
+        <div data-om-id="d44bb400:om-div-249" class="lang-row"><span data-om-id="d44bb400:om-span-115" data-om-text-id="txt:index.html:83938:83944" class="l-name">Korean</span><span data-om-id="d44bb400:om-span-116" class="l-bar"><i data-om-id="d44bb400:om-i-8" style="width:50%"></i></span><span data-om-id="d44bb400:om-span-117" data-om-text-id="txt:index.html:84025:84037" class="l-level">Intermediate</span></div>
+        <div data-om-id="d44bb400:om-div-250" class="lang-row"><span data-om-id="d44bb400:om-span-118" data-om-text-id="txt:index.html:84102:84107" class="l-name">Malay</span><span data-om-id="d44bb400:om-span-119" class="l-bar"><i data-om-id="d44bb400:om-i-9" style="width:49%"></i></span><span data-om-id="d44bb400:om-span-120" data-om-text-id="txt:index.html:84188:84200" class="l-level">Intermediate</span></div>
+        <div data-om-id="d44bb400:om-div-251" class="lang-row"><span data-om-id="d44bb400:om-span-121" data-om-text-id="txt:index.html:84265:84272" class="l-name">Chinese</span><span data-om-id="d44bb400:om-span-122" class="l-bar"><i data-om-id="d44bb400:om-i-10" style="width:15%"></i></span><span data-om-id="d44bb400:om-span-123" data-om-text-id="txt:index.html:84353:84361" class="l-level">Beginner</span></div>
+        <div data-om-id="d44bb400:om-div-252" class="lang-row"><span data-om-id="d44bb400:om-span-124" data-om-text-id="txt:index.html:84426:84432" class="l-name">German</span><span data-om-id="d44bb400:om-span-125" class="l-bar"><i data-om-id="d44bb400:om-i-11" style="width:15%"></i></span><span data-om-id="d44bb400:om-span-126" data-om-text-id="txt:index.html:84513:84521" class="l-level">Beginner</span></div>
+	<div data-om-id="d44bb400:om-div-253" class="lang-row"><span data-om-id="d44bb400:om-span-124" data-om-text-id="txt:index.html:84426:84432" class="l-name">Arabic</span><span data-om-id="d44bb400:om-span-125" class="l-bar"><i data-om-id="d44bb400:om-i-11" style="width:10%"></i></span><span data-om-id="d44bb400:om-span-126" data-om-text-id="txt:index.html:84513:84521" class="l-level">Beginner</span></div>
+      </div>
+      <div data-om-id="d44bb400:om-div-254">
+        <!-- Featured full-width certification card (positioned above TOEFL/JLPT) -->
+        <div data-om-id="d44bb400:om-div-255" class="cert-wide">
+          <img data-om-id="d44bb400:om-img-17" class="cw-logo on-dark-invert" src="Assets/aiprocert.png" alt="AiProCert logo">
+          <div data-om-id="d44bb400:om-div-256" class="cw-body">
+            <div data-om-id="d44bb400:om-div-257" data-om-text-id="txt:index.html:84832:84883" class="cw-title">Certified Data Analyst in Banking and Finance (CDA)</div>
+            <div data-om-id="d44bb400:om-div-258" class="cw-sub">Certified by <b data-om-id="d44bb400:om-b-9" data-om-text-id="txt:index.html:84938:84947">AiProCert</b>, <b data-om-id="d44bb400:om-b-10" data-om-text-id="txt:index.html:84956:84960">MBOT</b> &amp; <b data-om-id="d44bb400:om-b-11" data-om-text-id="txt:index.html:84974:84982">AntsBees</b> · <span data-om-id="d44bb400:om-span-127" data-om-text-id="txt:index.html:85010:85014" class="cw-hi">BNSP</span> Acknowledged</div>
+            <div data-om-id="d44bb400:om-div-259" class="cw-issuers" aria-label="Issuing bodies">
+              <img data-om-id="d44bb400:om-img-18" class="cw-issuer-logo on-dark-invert" src="Assets/mbot.png" alt="MBOT logo">
+              <img data-om-id="d44bb400:om-img-19" class="cw-issuer-logo on-dark-invert" src="Assets/antsbees.png" alt="AntsBees logo">
+              <img data-om-id="d44bb400:om-img-20" class="cw-issuer-logo on-dark-invert" src="Assets/bnsp.png" alt="BNSP logo">
+            </div>
+            <div data-om-id="d44bb400:om-div-260" class="cw-links">
+              <a data-om-id="d44bb400:om-a-24" data-om-text-id="txt:index.html:85578:85599" class="cw-link" href="https://credsverse.com/credentials/b2f060ff-947f-4c96-b961-496d73d3c3cb" target="_blank" rel="noopener">Verify Credential ↗</a>
+              <a data-om-id="d44bb400:om-a-25" data-om-text-id="txt:index.html:85747:85764" class="cw-link" href="https://credsverse.com/credentials/cda2463a-ee8e-4a29-b456-52a887a55324" target="_blank" rel="noopener">View Industry ↗</a>
+            </div>
+          </div>
+          <div data-om-id="d44bb400:om-div-261" class="cw-right">
+            <div data-om-id="d44bb400:om-div-262" data-om-text-id="txt:index.html:85872:85874" class="cw-score">84</div>
+            <div data-om-id="d44bb400:om-div-263" data-om-text-id="txt:index.html:85921:85926" class="cw-score-label">Score</div>
+          </div>
+        </div>
+
+        <div data-om-id="d44bb400:om-div-264" class="certs-row">
+          <div data-om-id="d44bb400:om-div-265" class="cert">
+            <div data-om-id="d44bb400:om-div-266" class="cert-inner">
+              <img data-om-id="d44bb400:om-img-21" class="cert-logo on-dark-invert" src="Assets/toefl.png" alt="TOEFL ETS logo">
+              <div data-om-id="d44bb400:om-div-267" class="cert-txt">
+                <div data-om-id="d44bb400:om-div-268" data-om-text-id="txt:index.html:86227:86236" class="c-name">TOEFL ITP</div>
+                <div data-om-id="d44bb400:om-div-269" data-om-text-id="txt:index.html:86372:86391" style="font-size:10.5px;color:var(--ink-mute);letter-spacing:.14em;margin-top:4px;text-transform:uppercase">English Proficiency</div>
+              </div>
+            </div>
+            <div data-om-id="d44bb400:om-div-270" data-om-text-id="txt:index.html:86471:86474" class="c-score">560</div>
+          </div>
+          <div data-om-id="d44bb400:om-div-271" class="cert">
+            <div data-om-id="d44bb400:om-div-272" class="cert-inner">
+              <img data-om-id="d44bb400:om-img-22" class="cert-logo on-dark-invert" src="Assets/jlpt.png" alt="JLPT logo">
+              <div data-om-id="d44bb400:om-div-273" class="cert-txt">
+                <div data-om-id="d44bb400:om-div-274" data-om-text-id="txt:index.html:86721:86728" class="c-name">JLPT N3</div>
+                <div data-om-id="d44bb400:om-div-275" data-om-text-id="txt:index.html:86864:86872" style="font-size:10.5px;color:var(--ink-mute);letter-spacing:.14em;margin-top:4px;text-transform:uppercase">Japanese</div>
+              </div>
+            </div>
+            <div data-om-id="d44bb400:om-div-276" data-om-text-id="txt:index.html:86952:86954" class="c-score">98</div>
+          </div>
+        </div>
+        <a data-om-id="d44bb400:om-a-26" data-om-text-id="txt:index.html:87187:87218" class="btn ghost" style="width:100%;justify-content:center" href="https://drive.google.com/drive/folders/1Gc-mKpIKlaG11wD4nDqxFfypbOMV8Ob6?usp=sharing" target="_blank" rel="noopener">View Certificate Repository ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== §08 PEER FEEDBACK ==================== -->
+  <section data-om-id="d44bb400:om-section-8" id="testimonials" class="reveal">
+    <div data-om-id="d44bb400:om-div-277" class="sec-head">
+      <div data-om-id="d44bb400:om-div-278"><div data-om-id="d44bb400:om-div-279" data-om-text-id="txt:index.html:87437:87458" class="sec-num">§ 08 / Peer Feedback</div><h2 data-om-id="d44bb400:om-h2-8" class="sec-title">Personality &amp; <span data-om-id="d44bb400:om-span-128" data-om-text-id="txt:index.html:87521:87530" class="em">character</span></h2></div>
+      <div data-om-id="d44bb400:om-div-280" data-om-text-id="txt:index.html:87577:87599" class="sec-meta">ISFJ · 360° feedback</div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-281" class="testimonials-intro">
+      <div data-om-id="d44bb400:om-div-282" data-om-text-id="txt:index.html:87683:87687" class="ti-badge">ISFJ</div>
+      <div data-om-id="d44bb400:om-div-283" class="ti-body">
+        <span data-om-id="d44bb400:om-span-129" data-om-text-id="txt:index.html:87753:87770" class="ti-label">Character summary</span>
+        A <b data-om-id="d44bb400:om-b-12" data-om-text-id="txt:index.html:87791:87804">good listener</b>, empathetic, <b data-om-id="d44bb400:om-b-13" data-om-text-id="txt:index.html:87825:87831">polite</b>, patient, meticulous, <b data-om-id="d44bb400:om-b-14" data-om-text-id="txt:index.html:87861:87876">detail-oriented</b>, <b data-om-id="d44bb400:om-b-15" data-om-text-id="txt:index.html:87885:87898">collaborative</b>, flexible, and highly reliable. Naturally inclined toward <b data-om-id="d44bb400:om-b-16" data-om-text-id="txt:index.html:87964:87981">thorough planning</b> — sometimes to the point of overthinking — but balanced by strong time management, priority scaling, and strict deadline execution.
+      </div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-284" class="isfj-grid">
+      <div data-om-id="d44bb400:om-div-285" class="isfj-card">
+        <div data-om-id="d44bb400:om-div-286" data-om-text-id="txt:index.html:88238:88239" class="isfj-letter">I</div>
+        <div data-om-id="d44bb400:om-div-287" data-om-text-id="txt:index.html:88278:88289" class="isfj-title">Introverted</div>
+        <p data-om-id="d44bb400:om-p-5" data-om-text-id="txt:index.html:88325:88449" class="isfj-desc">Recharges through focused, quiet work. Thinks before speaking and prefers deep, meaningful conversations over crowded rooms.</p>
+      </div>
+      <div data-om-id="d44bb400:om-div-288" class="isfj-card">
+        <div data-om-id="d44bb400:om-div-289" data-om-text-id="txt:index.html:88530:88531" class="isfj-letter">S</div>
+        <div data-om-id="d44bb400:om-div-290" data-om-text-id="txt:index.html:88570:88577" class="isfj-title">Sensing</div>
+        <p data-om-id="d44bb400:om-p-6" data-om-text-id="txt:index.html:88613:88738" class="isfj-desc">Grounded in facts, procedures, and lived experience. Notices details others miss and trusts what has been tested in practice.</p>
+      </div>
+      <div data-om-id="d44bb400:om-div-291" class="isfj-card">
+        <div data-om-id="d44bb400:om-div-292" data-om-text-id="txt:index.html:88819:88820" class="isfj-letter">F</div>
+        <div data-om-id="d44bb400:om-div-293" data-om-text-id="txt:index.html:88859:88866" class="isfj-title">Feeling</div>
+        <p data-om-id="d44bb400:om-p-7" data-om-text-id="txt:index.html:88902:89018" class="isfj-desc">Decisions weigh people and impact, not just logic. Empathetic, considerate, and loyal to teammates and shared goals.</p>
+      </div>
+      <div data-om-id="d44bb400:om-div-294" class="isfj-card">
+        <div data-om-id="d44bb400:om-div-295" data-om-text-id="txt:index.html:89099:89100" class="isfj-letter">J</div>
+        <div data-om-id="d44bb400:om-div-296" data-om-text-id="txt:index.html:89139:89146" class="isfj-title">Judging</div>
+        <p data-om-id="d44bb400:om-p-8" data-om-text-id="txt:index.html:89182:89310" class="isfj-desc">Prefers structure, plans, and finished tasks. Reliable with deadlines, and comfortable turning ambiguity into a clear checklist.</p>
+      </div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-297" class="testimonials-grid">
+      <article data-om-id="d44bb400:om-article-11" class="quote-card">
+        <span data-om-id="d44bb400:om-span-130" data-om-text-id="txt:index.html:89440:89441" class="q-mark">"</span>
+        <p data-om-id="d44bb400:om-p-9" data-om-text-id="txt:index.html:89475:89666" class="q-text">Yoshio is the person you want in a project when nothing can slip through the cracks. He listens carefully, documents everything, and quietly keeps the whole team aligned on the small details.</p>
+        <div data-om-id="d44bb400:om-div-298" class="q-attr">
+          <div data-om-id="d44bb400:om-div-299" data-om-text-id="txt:index.html:89732:89733" class="q-avatar">A</div>
+          <div data-om-id="d44bb400:om-div-300">
+            <div data-om-id="d44bb400:om-div-301" data-om-text-id="txt:index.html:89787:89800" class="q-who">Academic Peer</div>
+            <div data-om-id="d44bb400:om-div-302" data-om-text-id="txt:index.html:89839:89859" class="q-role">Airlangga University</div>
+          </div>
+        </div>
+      </article>
+
+      <article data-om-id="d44bb400:om-article-12" class="quote-card">
+        <span data-om-id="d44bb400:om-span-131" data-om-text-id="txt:index.html:89980:89981" class="q-mark">"</span>
+        <p data-om-id="d44bb400:om-p-10" data-om-text-id="txt:index.html:90015:90224" class="q-text">He plans thoroughly and thinks through every scenario before moving. That habit — combined with strict deadline discipline — makes him the kind of teammate you can hand a task to and not worry about again.</p>
+        <div data-om-id="d44bb400:om-div-303" class="q-attr">
+          <div data-om-id="d44bb400:om-div-304" data-om-text-id="txt:index.html:90290:90291" class="q-avatar">C</div>
+          <div data-om-id="d44bb400:om-div-305">
+            <div data-om-id="d44bb400:om-div-306" data-om-text-id="txt:index.html:90345:90367" class="q-who">Community Program Lead</div>
+            <div data-om-id="d44bb400:om-div-307" data-om-text-id="txt:index.html:90406:90425" class="q-role">Empowerment Program</div>
+          </div>
+        </div>
+      </article>
+
+      <article data-om-id="d44bb400:om-article-13" class="quote-card">
+        <span data-om-id="d44bb400:om-span-132" data-om-text-id="txt:index.html:90546:90547" class="q-mark">"</span>
+        <p data-om-id="d44bb400:om-p-11" data-om-text-id="txt:index.html:90581:90775" class="q-text">Patient, empathetic, and genuinely collaborative. Yoshio adapts easily to different working styles, and when priorities shift he re-scales the workload without dropping the ball on what matters.</p>
+        <div data-om-id="d44bb400:om-div-308" class="q-attr">
+          <div data-om-id="d44bb400:om-div-309" data-om-text-id="txt:index.html:90841:90842" class="q-avatar">K</div>
+          <div data-om-id="d44bb400:om-div-310">
+            <div data-om-id="d44bb400:om-div-311" data-om-text-id="txt:index.html:90896:90916" class="q-who">Internship Colleague</div>
+            <div data-om-id="d44bb400:om-div-312" data-om-text-id="txt:index.html:90955:90980" class="q-role">Kimia Farma · QA Support</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==================== §09 HOBBIES & INTERESTS ==================== -->
+  <section data-om-id="d44bb400:om-section-9" id="hobbies" class="reveal">
+    <div data-om-id="d44bb400:om-div-313" class="sec-head">
+      <div data-om-id="d44bb400:om-div-314"><div data-om-id="d44bb400:om-div-315" data-om-text-id="txt:index.html:91238:91269" class="sec-num">§ 09 / Hobbies &amp; Interests</div><h2 data-om-id="d44bb400:om-h2-9" class="sec-title">Off-<span data-om-id="d44bb400:om-span-133" data-om-text-id="txt:index.html:91318:91330" class="em">duty signals</span></h2></div>
+      <div data-om-id="d44bb400:om-div-316" data-om-text-id="txt:index.html:91377:91403" class="sec-meta">6 categories · filterable</div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-317" class="hobbies-filter" id="hobbiesFilter">
+      <span data-om-id="d44bb400:om-span-134" data-om-text-id="txt:index.html:91503:91509" class="hf-label">Filter</span>
+      <button data-om-id="d44bb400:om-button-6" data-om-text-id="txt:index.html:91586:91589" class="hf-chip active" data-filter="all" type="button">All</button>
+      <button data-om-id="d44bb400:om-button-7" data-om-text-id="txt:index.html:91662:91671" class="hf-chip" data-filter="lang" type="button">Languages</button>
+      <button data-om-id="d44bb400:om-button-8" data-om-text-id="txt:index.html:91745:91750" class="hf-chip" data-filter="music" type="button">Music</button>
+      <button data-om-id="d44bb400:om-button-9" data-om-text-id="txt:index.html:91824:91847" class="hf-chip" data-filter="media" type="button">Media &amp; Pop-Culture</button>
+      <button data-om-id="d44bb400:om-button-10" data-om-text-id="txt:index.html:91921:91927" class="hf-chip" data-filter="sport" type="button">Sports</button>
+      <button data-om-id="d44bb400:om-button-11" data-om-text-id="txt:index.html:92000:92025" class="hf-chip" data-filter="mind" type="button">Strategy &amp; Mind Games</button>
+      <button data-om-id="d44bb400:om-button-12" data-om-text-id="txt:index.html:92098:92119" class="hf-chip" data-filter="tech" type="button">Tech &amp; Upskilling</button>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-318" class="hobbies-grid" id="hobbiesGrid">
+      <article data-om-id="d44bb400:om-article-14" class="hobby-card" data-cat="lang">
+        <div data-om-id="d44bb400:om-div-319" class="h-head">
+          <div data-om-id="d44bb400:om-div-320" data-om-text-id="txt:index.html:92299:92301" class="h-icon">¶</div>
+          <div data-om-id="d44bb400:om-div-321">
+            <div data-om-id="d44bb400:om-div-322" data-om-text-id="txt:index.html:92357:92374" class="h-title">Foreign Languages</div>
+            <div data-om-id="d44bb400:om-div-323" data-om-text-id="txt:index.html:92412:92429" class="h-cat">Language Learning</div>
+          </div>
+        </div>
+        <p data-om-id="d44bb400:om-p-12" data-om-text-id="txt:index.html:92494:92653" class="h-desc">Continuously learning and practicing new languages — currently building on Japanese and Korean, with occasional dabbling into Mandarin and German vocabulary.</p>
+        <div data-om-id="d44bb400:om-div-324" class="h-tags">
+          <span data-om-id="d44bb400:om-span-135" data-om-text-id="txt:index.html:92717:92727" class="h-tag">Indonesian</span>
+          <span data-om-id="d44bb400:om-span-136" data-om-text-id="txt:index.html:92765:92772" class="h-tag">English</span>
+          <span data-om-id="d44bb400:om-span-137" data-om-text-id="txt:index.html:92810:92818" class="h-tag">Japanese</span>
+          <span data-om-id="d44bb400:om-span-138" data-om-text-id="txt:index.html:92856:92862" class="h-tag">Korean</span>
+          <span data-om-id="d44bb400:om-span-139" data-om-text-id="txt:index.html:92900:92905" class="h-tag">Malay</span>
+          <span data-om-id="d44bb400:om-span-140" data-om-text-id="txt:index.html:92943:92963" class="h-tag">Chinese (Simplified)</span>
+          <span data-om-id="d44bb400:om-span-141" data-om-text-id="txt:index.html:93001:93008" class="h-tag">Deutsch</span>
+          <span data-om-id="d44bb400:om-span-142" data-om-text-id="txt:index.html:93046:93054" class="h-tag">Arabic</span>
+          <span data-om-id="d44bb400:om-span-143" data-om-text-id="txt:index.html:93046:93054" class="h-tag">Duolingo</span>
+        </div>
+      </article>
+
+      <article data-om-id="d44bb400:om-article-15" class="hobby-card" data-cat="music">
+        <div data-om-id="d44bb400:om-div-325" class="h-head">
+          <div data-om-id="d44bb400:om-div-326" data-om-text-id="txt:index.html:93206:93209" class="h-icon">♫</div>
+          <div data-om-id="d44bb400:om-div-327">
+            <div data-om-id="d44bb400:om-div-328" data-om-text-id="txt:index.html:93265:93282" class="h-title">Music &amp; Audio</div>
+            <div data-om-id="d44bb400:om-div-329" data-om-text-id="txt:index.html:93320:93343" class="h-cat">Genre-Agnostic Listener</div>
+          </div>
+        </div>
+        <p data-om-id="d44bb400:om-p-13" data-om-text-id="txt:index.html:93408:93557" class="h-desc">Wide-spectrum listener — from OSTs and classical pieces to K-Pop, J-Pop, Hip-Hop, and reggae. Music tracks my mood and fuels focused work sessions.</p>
+        <div data-om-id="d44bb400:om-div-330" class="h-tags">
+          <span data-om-id="d44bb400:om-span-144" data-om-text-id="txt:index.html:93621:93624" class="h-tag">Pop</span>
+          <span data-om-id="d44bb400:om-span-145" data-om-text-id="txt:index.html:93662:93667" class="h-tag">K-Pop</span>
+          <span data-om-id="d44bb400:om-span-146" data-om-text-id="txt:index.html:93705:93710" class="h-tag">J-Pop</span>
+          <span data-om-id="d44bb400:om-span-147" data-om-text-id="txt:index.html:93748:93756" class="h-tag">Indo Pop</span>
+          <span data-om-id="d44bb400:om-span-148" data-om-text-id="txt:index.html:93794:93801" class="h-tag">Hip-Hop</span>
+          <span data-om-id="d44bb400:om-span-149" data-om-text-id="txt:index.html:93839:93846" class="h-tag">R&amp;B</span>
+          <span data-om-id="d44bb400:om-span-150" data-om-text-id="txt:index.html:93884:93887" class="h-tag">EDM</span>
+          <span data-om-id="d44bb400:om-span-151" data-om-text-id="txt:index.html:93925:93934" class="h-tag">Classical</span>
+          <span data-om-id="d44bb400:om-span-152" data-om-text-id="txt:index.html:93972:93976" class="h-tag">OSTs</span>
+          <span data-om-id="d44bb400:om-span-153" data-om-text-id="txt:index.html:94014:94021" class="h-tag">Country</span>
+          <span data-om-id="d44bb400:om-span-154" data-om-text-id="txt:index.html:94059:94065" class="h-tag">Reggae</span>
+          <span data-om-id="d44bb400:om-span-155" data-om-text-id="txt:index.html:94103:94107" class="h-tag">Jazz</span>
+          <span data-om-id="d44bb400:om-span-156" data-om-text-id="txt:index.html:94145:94152" class="h-tag">Ballads</span>
+        </div>
+      </article>
+
+      <article data-om-id="d44bb400:om-article-16" class="hobby-card" data-cat="media">
+        <div data-om-id="d44bb400:om-div-331" class="h-head">
+          <div data-om-id="d44bb400:om-div-332" data-om-text-id="txt:index.html:94304:94307" class="h-icon">▶</div>
+          <div data-om-id="d44bb400:om-div-333">
+            <div data-om-id="d44bb400:om-div-334" data-om-text-id="txt:index.html:94363:94386" class="h-title">Media &amp; Pop Culture</div>
+            <div data-om-id="d44bb400:om-div-335" data-om-text-id="txt:index.html:94424:94445" class="h-cat">Storytelling Consumer</div>
+          </div>
+        </div>
+        <p data-om-id="d44bb400:om-p-14" data-om-text-id="txt:index.html:94510:94647" class="h-desc">Movies, anime, dramas, series, novels, and manga — always chasing a good story. Keeps tabs on global pop-culture trends across regions.</p>
+        <div data-om-id="d44bb400:om-div-336" class="h-tags">
+          <span data-om-id="d44bb400:om-span-157" data-om-text-id="txt:index.html:94711:94717" class="h-tag">Movies</span>
+          <span data-om-id="d44bb400:om-span-158" data-om-text-id="txt:index.html:94755:94760" class="h-tag">Anime</span>
+          <span data-om-id="d44bb400:om-span-159" data-om-text-id="txt:index.html:94798:94808" class="h-tag">K/J Dramas</span>
+          <span data-om-id="d44bb400:om-span-160" data-om-text-id="txt:index.html:94846:94852" class="h-tag">Series</span>
+          <span data-om-id="d44bb400:om-span-161" data-om-text-id="txt:index.html:94890:94896" class="h-tag">Novels</span>
+          <span data-om-id="d44bb400:om-span-162" data-om-text-id="txt:index.html:94934:94939" class="h-tag">Manga</span>
+          <span data-om-id="d44bb400:om-span-163" data-om-text-id="txt:index.html:94977:94983" class="h-tag">Action</span>
+          <span data-om-id="d44bb400:om-span-164" data-om-text-id="txt:index.html:95021:95027" class="h-tag">Sci-Fi</span>
+          <span data-om-id="d44bb400:om-span-165" data-om-text-id="txt:index.html:95065:95072" class="h-tag">Mystery</span>
+          <span data-om-id="d44bb400:om-span-166" data-om-text-id="txt:index.html:95110:95135" class="h-tag">Marvel Cinematic Universe</span>
+          <span data-om-id="d44bb400:om-span-167" data-om-text-id="txt:index.html:95173:95186" class="h-tag">Global Trends</span>
+        </div>
+      </article>
+
+      <article data-om-id="d44bb400:om-article-17" class="hobby-card" data-cat="sport">
+        <div data-om-id="d44bb400:om-div-337" class="h-head">
+          <div data-om-id="d44bb400:om-div-338" class="h-icon" aria-hidden="true">
+            <!-- Badminton / tennis racket icon -->
+            <svg data-om-id="d44bb400:om-svg-2" viewBox="0 0 24 24">
+              <ellipse cx="9" cy="9" rx="5.5" ry="5.5" data-om-id="d44bb400:om-ellipse-4"/>
+              <line x1="9" y1="3.5" x2="9" y2="14.5" data-om-id="d44bb400:om-line-1"/>
+              <line x1="3.5" y1="9" x2="14.5" y2="9" data-om-id="d44bb400:om-line-2"/>
+              <line x1="5.4" y1="5.4" x2="12.6" y2="12.6" data-om-id="d44bb400:om-line-3"/>
+              <line x1="12.6" y1="5.4" x2="5.4" y2="12.6" data-om-id="d44bb400:om-line-4"/>
+              <line x1="12.9" y1="12.9" x2="20" y2="20" data-om-id="d44bb400:om-line-5"/>
+              <line x1="18.5" y1="18.5" x2="21" y2="21" data-om-id="d44bb400:om-line-6"/>
+            </svg>
+          </div>
+          <div data-om-id="d44bb400:om-div-339">
+            <div data-om-id="d44bb400:om-div-340" data-om-text-id="txt:index.html:95936:95956" class="h-title">Sports &amp; Fitness</div>
+            <div data-om-id="d44bb400:om-div-341" data-om-text-id="txt:index.html:95994:96009" class="h-cat">Active Recovery</div>
+          </div>
+        </div>
+        <p data-om-id="d44bb400:om-p-15" data-om-text-id="txt:index.html:96074:96190" class="h-desc">Balances desk-heavy work with regular movement — pool sessions, court time, easy jogs, and steady gym progression.</p>
+        <div data-om-id="d44bb400:om-div-342" class="h-tags">
+          <span data-om-id="d44bb400:om-span-168" data-om-text-id="txt:index.html:96254:96262" class="h-tag">Swimming</span>
+          <span data-om-id="d44bb400:om-span-169" data-om-text-id="txt:index.html:96300:96309" class="h-tag">Badminton</span>
+          <span data-om-id="d44bb400:om-span-170" data-om-text-id="txt:index.html:96347:96354" class="h-tag">Jogging</span>
+          <span data-om-id="d44bb400:om-span-171" data-om-text-id="txt:index.html:96392:96409" class="h-tag">Soccer / Football</span>
+          <span data-om-id="d44bb400:om-span-172" data-om-text-id="txt:index.html:96447:96456" class="h-tag">Taekwondo</span>
+          <span data-om-id="d44bb400:om-span-173" data-om-text-id="txt:index.html:96494:96497" class="h-tag">Gym</span>
+        </div>
+      </article>
+
+      <article data-om-id="d44bb400:om-article-18" class="hobby-card" data-cat="mind">
+        <div data-om-id="d44bb400:om-div-343" class="h-head">
+          <div data-om-id="d44bb400:om-div-344" class="h-icon" aria-hidden="true">
+            <!-- Brain icon -->
+            <svg data-om-id="d44bb400:om-svg-3" viewBox="0 0 24 24">
+              <path d="M9 4.5c-1.7 0-3 1.3-3 3 0 .3 0 .5.1.8-1.2.4-2.1 1.5-2.1 2.9 0 .9.4 1.7 1 2.3-.6.5-1 1.3-1 2.2 0 1.4 1 2.6 2.4 2.9.1 1.6 1.4 2.9 3 2.9 1.4 0 2.5-.9 2.9-2.2" data-om-id="d44bb400:om-path-1"/>
+              <path d="M15 4.5c1.7 0 3 1.3 3 3 0 .3 0 .5-.1.8 1.2.4 2.1 1.5 2.1 2.9 0 .9-.4 1.7-1 2.3.6.5 1 1.3 1 2.2 0 1.4-1 2.6-2.4 2.9-.1 1.6-1.4 2.9-3 2.9-1.4 0-2.5-.9-2.9-2.2" data-om-id="d44bb400:om-path-2"/>
+              <line x1="12" y1="4.5" x2="12" y2="20" data-om-id="d44bb400:om-line-7"/>
+              <path d="M9 9c.8 0 1.5-.4 2-1" data-om-id="d44bb400:om-path-3"/>
+              <path d="M15 9c-.8 0-1.5-.4-2-1" data-om-id="d44bb400:om-path-4"/>
+              <path d="M9 14c.8 0 1.5.4 2 1" data-om-id="d44bb400:om-path-5"/>
+              <path d="M15 14c-.8 0-1.5.4-2 1" data-om-id="d44bb400:om-path-6"/>
+            </svg>
+          </div>
+          <div data-om-id="d44bb400:om-div-345">
+            <div data-om-id="d44bb400:om-div-346" data-om-text-id="txt:index.html:97434:97459" class="h-title">Strategy &amp; Mind Games</div>
+            <div data-om-id="d44bb400:om-div-347" data-om-text-id="txt:index.html:97497:97518" class="h-cat">Logic &amp; Foresight</div>
+          </div>
+        </div>
+        <p data-om-id="d44bb400:om-p-16" data-om-text-id="txt:index.html:97583:97719" class="h-desc">Enjoys structured problem-solving — chess openings, sudoku grids, tactical strategy games, and card &amp; board sessions with friends.</p>
+        <div data-om-id="d44bb400:om-div-348" class="h-tags">
+          <span data-om-id="d44bb400:om-span-174" data-om-text-id="txt:index.html:97783:97797" class="h-tag">Strategy Games</span>
+          <span data-om-id="d44bb400:om-span-175" data-om-text-id="txt:index.html:97835:97840" class="h-tag">Chess</span>
+          <span data-om-id="d44bb400:om-span-176" data-om-text-id="txt:index.html:97878:97884" class="h-tag">Sudoku</span>
+          <span data-om-id="d44bb400:om-span-177" data-om-text-id="txt:index.html:97922:97929" class="h-tag">Puzzles</span>
+          <span data-om-id="d44bb400:om-span-178" data-om-text-id="txt:index.html:97967:97978" class="h-tag">Board Games</span>
+          <span data-om-id="d44bb400:om-span-179" data-om-text-id="txt:index.html:98016:98026" class="h-tag">Card Games</span>
+        </div>
+      </article>
+
+      <article data-om-id="d44bb400:om-article-19" class="hobby-card" data-cat="tech">
+        <div data-om-id="d44bb400:om-div-349" class="h-head">
+          <div data-om-id="d44bb400:om-div-350" class="h-icon" aria-hidden="true">
+            <!-- Gear / sprocket icon -->
+            <svg data-om-id="d44bb400:om-svg-4" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3" data-om-id="d44bb400:om-circle-8"/>
+              <path d="M12 2v3" data-om-id="d44bb400:om-path-7"/>
+              <path d="M12 19v3" data-om-id="d44bb400:om-path-8"/>
+              <path d="M2 12h3" data-om-id="d44bb400:om-path-9"/>
+              <path d="M19 12h3" data-om-id="d44bb400:om-path-10"/>
+              <path d="M4.9 4.9l2.1 2.1" data-om-id="d44bb400:om-path-11"/>
+              <path d="M17 17l2.1 2.1" data-om-id="d44bb400:om-path-12"/>
+              <path d="M4.9 19.1l2.1-2.1" data-om-id="d44bb400:om-path-13"/>
+              <path d="M17 7l2.1-2.1" data-om-id="d44bb400:om-path-14"/>
+            </svg>
+          </div>
+          <div data-om-id="d44bb400:om-div-351">
+            <div data-om-id="d44bb400:om-div-352" data-om-text-id="txt:index.html:98714:98735" class="h-title">Tech &amp; Upskilling</div>
+            <div data-om-id="d44bb400:om-div-353" data-om-text-id="txt:index.html:98773:98792" class="h-cat">Continuous Learning</div>
+          </div>
+        </div>
+        <p data-om-id="d44bb400:om-p-17" data-om-text-id="txt:index.html:98857:98994" class="h-desc">Practices basic coding on the side and enrols in professional short-courses across data, AI, product, and UI/UX to stay cross-functional.</p>
+        <div data-om-id="d44bb400:om-div-354" class="h-tags">
+          <span data-om-id="d44bb400:om-span-180" data-om-text-id="txt:index.html:99058:99073" class="h-tag">HTML / CSS / JS</span>
+          <span data-om-id="d44bb400:om-span-181" data-om-text-id="txt:index.html:99111:99123" class="h-tag">AI Prompting</span>
+          <span data-om-id="d44bb400:om-span-182" data-om-text-id="txt:index.html:99161:99168" class="h-tag">MySkill</span>
+          <span data-om-id="d44bb400:om-span-183" data-om-text-id="txt:index.html:99206:99211" class="h-tag">DQLab</span>
+          <span data-om-id="d44bb400:om-span-184" data-om-text-id="txt:index.html:99249:99257" class="h-tag">Bootcamp</span>
+          <span data-om-id="d44bb400:om-span-185" data-om-text-id="txt:index.html:99295:99303" class="h-tag">Training</span>
+          <span data-om-id="d44bb400:om-span-186" data-om-text-id="txt:index.html:99341:99350" class="h-tag">Workshops</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==================== §10 CONTACT ==================== -->
+  <section data-om-id="d44bb400:om-section-10" id="contact" class="reveal">
+    <div data-om-id="d44bb400:om-div-355" class="sec-head">
+      <div data-om-id="d44bb400:om-div-356"><div data-om-id="d44bb400:om-div-357" data-om-text-id="txt:index.html:99580:99595" class="sec-num">§ 10 / Contact</div><h2 data-om-id="d44bb400:om-h2-10" class="sec-title">Open <span data-om-id="d44bb400:om-span-187" data-om-text-id="txt:index.html:99645:99652" class="em">channel</span></h2></div>
+      <div data-om-id="d44bb400:om-div-358" data-om-text-id="txt:index.html:99699:99716" class="sec-meta">Response &lt; 24h</div>
+    </div>
+
+    <div data-om-id="d44bb400:om-div-359" class="contact-block">
+      <div data-om-id="d44bb400:om-div-360" class="contact-main">
+        <div data-om-id="d44bb400:om-div-361" data-om-text-id="txt:index.html:99827:99858" class="c-lab">▶ Preferred channel — email</div>
+        <div data-om-id="d44bb400:om-div-362" data-om-text-id="txt:index.html:99893:99904" class="c-name">Let's talk.</div>
+        <a data-om-id="d44bb400:om-a-27" class="c-email js-email" href="#" data-u="yoshio.faris" data-d="gmail.com">yoshio.faris<span data-om-id="d44bb400:om-span-188" data-om-text-id="txt:index.html:100015:100016">@</span>gmail.com</a>
+        <div data-om-id="d44bb400:om-div-363" data-om-text-id="txt:index.html:100065:100218" class="c-note">
+          Open to opportunities in QA, project support, data analysis, and cross-functional operations roles — Jakarta, Tangerang, or remote.
+        </div>
+        <div data-om-id="d44bb400:om-div-364" class="contact-socials">
+          <a data-om-id="d44bb400:om-a-28" class="s-item" href="https://instagram.com/yoshio_fm" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg data-om-id="d44bb400:om-svg-5" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.05 1.9.24 2.3.4.6.22 1 .5 1.5 1s.7.9 1 1.5c.15.4.35 1.1.4 2.3.05 1.2.07 1.6.07 4.8s0 3.6-.07 4.8c-.05 1.2-.24 1.9-.4 2.3-.23.6-.5 1-1 1.5s-.9.8-1.5 1c-.4.15-1.1.34-2.3.4-1.2.05-1.6.07-4.8.07s-3.6 0-4.8-.07c-1.2-.05-1.9-.24-2.3-.4-.6-.22-1-.5-1.5-1s-.8-.9-1-1.5c-.15-.4-.35-1.1-.4-2.3-.05-1.2-.07-1.6-.07-4.8s0-3.6.07-4.8c.05-1.2.24-1.9.4-2.3.22-.6.5-1 1-1.5s.9-.8 1.5-1c.4-.15 1.1-.35 2.3-.4 1.2-.05 1.6-.07 4.8-.07M12 0C8.7 0 8.3 0 7.05.07 5.8.13 4.9.32 4.14.6c-.8.3-1.5.7-2.2 1.4-.7.7-1.1 1.4-1.4 2.2C.32 4.9.13 5.8.07 7.05.02 8.3 0 8.7 0 12s0 3.7.07 4.95c.06 1.25.25 2.1.53 2.85.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.75.29 1.6.48 2.85.53C8.3 24 8.7 24 12 24s3.7 0 4.95-.07c1.25-.05 2.1-.24 2.85-.53.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.29-.75.48-1.6.53-2.85.07-1.25.07-1.65.07-4.95s0-3.7-.07-4.95c-.05-1.25-.24-2.1-.53-2.85-.3-.8-.7-1.5-1.4-2.2-.7-.7-1.4-1.1-2.2-1.4C19.1.32 18.2.13 16.95.07 15.7.02 15.3 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z" data-om-id="d44bb400:om-path-15"/></svg>
+            <span data-om-id="d44bb400:om-span-189" data-om-text-id="txt:index.html:101561:101570">Instagram</span>
+          </a>
+          <a data-om-id="d44bb400:om-a-29" class="s-item" href="https://x.com/raziowizard" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg data-om-id="d44bb400:om-svg-6" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" data-om-id="d44bb400:om-path-16"/></svg>
+            <span data-om-id="d44bb400:om-span-190" data-om-text-id="txt:index.html:101940:101957">X · @raziowizard</span>
+          </a>
+        </div>
+      </div>
+
+      <div data-om-id="d44bb400:om-div-365" class="contact-side">
+        <div data-om-id="d44bb400:om-div-366" data-om-text-id="txt:index.html:102074:102088" class="cs-heading">Quick channels</div>
+        <a data-om-id="d44bb400:om-a-30" class="contact-item" href="https://wa.me/628119944872" target="_blank" rel="noopener">
+          <div data-om-id="d44bb400:om-div-367" data-om-text-id="txt:index.html:102221:102233" class="ci-k">WhatsApp ↗</div>
+          <div data-om-id="d44bb400:om-div-368" data-om-text-id="txt:index.html:102273:102289" class="ci-v mono">+62 811 9944 872</div>
+          <div data-om-id="d44bb400:om-div-369" data-om-text-id="txt:index.html:102327:102386" class="ci-note">Fastest way to reach me — usually replies within an hour.</div>
+        </a>
+        <a data-om-id="d44bb400:om-a-31" class="contact-item" href="https://drive.google.com/drive/folders/1Gc-mKpIKlaG11wD4nDqxFfypbOMV8Ob6?usp=sharing" target="_blank" rel="noopener">
+          <div data-om-id="d44bb400:om-div-370" data-om-text-id="txt:index.html:102590:102616" class="ci-k">Certificate Repository ↗</div>
+          <div data-om-id="d44bb400:om-div-371" data-om-text-id="txt:index.html:102651:102670" class="ci-v">Google Drive Folder</div>
+          <div data-om-id="d44bb400:om-div-372" data-om-text-id="txt:index.html:102708:102765" class="ci-note">Full set of academic, language, and program certificates.</div>
+        </a>
+        <a data-om-id="d44bb400:om-a-32" class="contact-item" href="Assets/CV_Yoshio.pdf" download>
+          <div data-om-id="d44bb400:om-div-373" data-om-text-id="txt:index.html:102876:102893" class="ci-k">CV / Résumé ↓</div>
+          <div data-om-id="d44bb400:om-div-374" data-om-text-id="txt:index.html:102928:102940" class="ci-v">Download PDF</div>
+          <div data-om-id="d44bb400:om-div-375" data-om-text-id="txt:index.html:102978:103013" class="ci-note">Latest version · updated Sep 2026.</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer data-om-id="d44bb400:om-footer-1">
+    <div data-om-id="d44bb400:om-div-376" data-om-text-id="txt:index.html:103166:103217" class="f-left">© 2026 Yoshio Faris Makarim · Instrument v2026.09</div>
+    <div data-om-id="d44bb400:om-div-377" class="f-socials">
+      <a data-om-id="d44bb400:om-a-33" class="js-email" href="#" data-u="yoshio.faris" data-d="gmail.com" aria-label="Email">
+        <svg data-om-id="d44bb400:om-svg-7" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24l-8 4.99-8-4.99V6l8 5 8-5z" data-om-id="d44bb400:om-path-17"/></svg>
+      </a>
+      <a data-om-id="d44bb400:om-a-34" href="https://instagram.com/yoshio_fm" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg data-om-id="d44bb400:om-svg-8" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.05 1.9.24 2.3.4.6.22 1 .5 1.5 1s.7.9 1 1.5c.15.4.35 1.1.4 2.3.05 1.2.07 1.6.07 4.8s0 3.6-.07 4.8c-.05 1.2-.24 1.9-.4 2.3-.23.6-.5 1-1 1.5s-.9.8-1.5 1c-.4.15-1.1.34-2.3.4-1.2.05-1.6.07-4.8.07s-3.6 0-4.8-.07c-1.2-.05-1.9-.24-2.3-.4-.6-.22-1-.5-1.5-1s-.8-.9-1-1.5c-.15-.4-.35-1.1-.4-2.3-.05-1.2-.07-1.6-.07-4.8s0-3.6.07-4.8c.05-1.2.24-1.9.4-2.3.22-.6.5-1 1-1.5s.9-.8 1.5-1c.4-.15 1.1-.35 2.3-.4 1.2-.05 1.6-.07 4.8-.07M12 0C8.7 0 8.3 0 7.05.07 5.8.13 4.9.32 4.14.6c-.8.3-1.5.7-2.2 1.4-.7.7-1.1 1.4-1.4 2.2C.32 4.9.13 5.8.07 7.05.02 8.3 0 8.7 0 12s0 3.7.07 4.95c.06 1.25.25 2.1.53 2.85.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.75.29 1.6.48 2.85.53C8.3 24 8.7 24 12 24s3.7 0 4.95-.07c1.25-.05 2.1-.24 2.85-.53.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.29-.75.48-1.6.53-2.85.07-1.25.07-1.65.07-4.95s0-3.7-.07-4.95c-.05-1.25-.24-2.1-.53-2.85-.3-.8-.7-1.5-1.4-2.2-.7-.7-1.4-1.1-2.2-1.4C19.1.32 18.2.13 16.95.07 15.7.02 15.3 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z" data-om-id="d44bb400:om-path-18"/></svg>
+      </a>
+      <a data-om-id="d44bb400:om-a-35" href="https://x.com/raziowizard" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <svg data-om-id="d44bb400:om-svg-9" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" data-om-id="d44bb400:om-path-19"/></svg>
+      </a>
+    </div>
+    <div data-om-id="d44bb400:om-div-378" data-om-text-id="txt:index.html:105137:105177" class="f-right">Tangerang · GMT+7 · One-page portfolio</div>
+  </footer>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script data-om-id="d44bb400:om-script-2" data-om-text-id="txt:index.html:105271:112040">
+  // === Reveal on scroll ===
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  },{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // === Theme toggle ===
+  var themeToggle = document.getElementById('themeToggle');
+  themeToggle.addEventListener('click', function(){
+    var current = document.documentElement.getAttribute('data-theme') || 'dark';
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('yfm-theme', next); } catch(e){}
+  });
+
+  // === Mobile menu ===
+  var burger = document.getElementById('navBurger');
+  var navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', function(){ navLinks.classList.toggle('open'); });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ navLinks.classList.remove('open'); });
+  });
+
+  // === Active nav link on scroll ===
+  // Section reorder: 01 Exp · 02 Edu · 03 Lead · 04 Res · 05 Proj · 06 Skills · 07 Lang · 08 Testi · 09 Contact
+  // Nav has 7 buttons; the omitted section ids still map to the closest nav pill for scroll-spy.
+  var sectionIds = ['profile','experience','education','leadership','research','projects','skills','languages','testimonials','hobbies','contact'];
+  var navFor = {profile:'profile', experience:'experience', education:'education', leadership:'education', research:'education', projects:'projects', skills:'skills', languages:'skills', testimonials:'testimonials', hobbies:'hobbies', contact:'contact'};
+  var navMap = {};
+  navLinks.querySelectorAll('a').forEach(function(a){
+    var id = a.getAttribute('href').replace('#','');
+    navMap[id] = a;
+  });
+  function updateActiveNav(){
+    var scrollY = window.scrollY + 120;
+    var current = 'profile';
+    sectionIds.forEach(function(id){
+      var el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollY) current = id;
+    });
+    var activeNavId = navFor[current] || current;
+    Object.keys(navMap).forEach(function(id){ navMap[id].classList.toggle('active', id === activeNavId); });
+  }
+  window.addEventListener('scroll', updateActiveNav, {passive:true});
+  updateActiveNav();
+
+  // === Projects horizontal slider ===
+  var projScroll = document.getElementById('projectsScroll');
+  var projPrev = document.getElementById('projPrev');
+  var projNext = document.getElementById('projNext');
+  function projStep(){
+    var card = projScroll.querySelector('.proj-card');
+    if(!card) return 340;
+    var style = window.getComputedStyle(projScroll);
+    var gap = parseInt(style.columnGap || style.gap || '20', 10) || 20;
+    return card.getBoundingClientRect().width + gap;
+  }
+  projPrev.addEventListener('click', function(){ projScroll.scrollBy({left: -projStep(), behavior:'smooth'}); });
+  projNext.addEventListener('click', function(){ projScroll.scrollBy({left: projStep(), behavior:'smooth'}); });
+  function updateProjArrows(){
+    var max = projScroll.scrollWidth - projScroll.clientWidth - 2;
+    projPrev.disabled = projScroll.scrollLeft <= 2;
+    projNext.disabled = projScroll.scrollLeft >= max;
+  }
+  projScroll.addEventListener('scroll', updateProjArrows, {passive:true});
+  window.addEventListener('resize', updateProjArrows);
+  updateProjArrows();
+
+  // === Compose real email on click (prevents literal mailto: in source) ===
+  document.querySelectorAll('.js-email').forEach(function(a){
+    var u = a.getAttribute('data-u') || '';
+    var d = a.getAttribute('data-d') || '';
+    var full = u + '@' + d;
+    // Set title & aria for accessibility
+    a.setAttribute('title', 'Email ' + full);
+    a.addEventListener('click', function(ev){
+      ev.preventDefault();
+      window.location.href = 'mailto:' + full;
+    });
+  });
+
+  // === Smooth-scroll anchor clicks with sticky-nav offset ===
+  function scrollToId(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    var navH = document.getElementById('navbar').offsetHeight || 64;
+    var y = el.getBoundingClientRect().top + window.scrollY - navH - 8;
+    window.scrollTo({top: y, behavior:'smooth'});
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    var href = a.getAttribute('href');
+    if(href.length < 2) return;
+    a.addEventListener('click', function(ev){
+      var id = href.slice(1);
+      if(document.getElementById(id)){
+        ev.preventDefault();
+        // If overlay still visible, dismiss it first, then scroll after fade
+        if(overlay && !overlay.classList.contains('hidden')){
+          dismissOverlay(function(){ scrollToId(id); });
+        } else {
+          scrollToId(id);
+        }
+        history.replaceState(null, '', '#'+id);
+      }
+    });
+  });
+
+  // === Enter Portfolio overlay ===
+  var overlay = document.getElementById('enterOverlay');
+  var enterBtn = document.getElementById('enterBtn');
+  function dismissOverlay(cb){
+    if(!overlay) { if(cb) cb(); return; }
+    overlay.classList.add('hidden');
+    document.body.classList.remove('enter-locked');
+    setTimeout(function(){
+      overlay.style.display = 'none';
+      if(cb) cb();
+    }, 800);
+  }
+  // Always show overlay on refresh (removed session-skip logic per user request).
+  // Clear any prior "entered" flag so refreshes always show the overlay again.
+  try { sessionStorage.removeItem('yfm_entered'); } catch(e){}
+  if(enterBtn){
+    enterBtn.addEventListener('click', function(){ dismissOverlay(); });
+  }
+  // Enter key or click anywhere on overlay dismisses too
+  document.addEventListener('keydown', function(ev){
+    if(overlay && !overlay.classList.contains('hidden') && (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'Escape')){
+      ev.preventDefault();
+      dismissOverlay();
+    }
+  });
+
+  // === Hobbies filter (§09) ===
+  var hobbiesFilter = document.getElementById('hobbiesFilter');
+  var hobbiesGrid = document.getElementById('hobbiesGrid');
+  if(hobbiesFilter && hobbiesGrid){
+    var chips = hobbiesFilter.querySelectorAll('.hf-chip');
+    var cards = hobbiesGrid.querySelectorAll('.hobby-card');
+    chips.forEach(function(chip){
+      chip.addEventListener('click', function(){
+        chips.forEach(function(c){ c.classList.remove('active'); });
+        chip.classList.add('active');
+        var filter = chip.getAttribute('data-filter');
+        cards.forEach(function(card){
+          var cat = card.getAttribute('data-cat');
+          if(filter === 'all' || cat === filter){
+            card.classList.remove('dim');
+          } else {
+            card.classList.add('dim');
+          }
+        });
+      });
+    });
+  }
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+
+    <!-- 1. CSS STYLING CODE (Stops image dragging and selection) -->
+    <style>
+      img {
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-drag: none; /* Extra protection for Safari/Chrome */
+      }
+    </style>
+
+    <!-- 2. JAVASCRIPT CODE (Blocks Ctrl+S and Right-Click) -->
+    <script>
+      // Blocks Ctrl + S
+      document.addEventListener('keydown', function (e) {
+          if (e.ctrlKey && (e.key === 's' || e.key === 'S')) {
+              e.preventDefault();
+              alert('Saving this page is disabled.');
+          }
+      });
+
+      // Blocks Right-Click
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+
+</body>
+</html>
